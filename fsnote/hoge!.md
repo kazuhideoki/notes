@@ -1,0 +1,7 @@
+hoge!
+
+fuga!
+
+piyo!
+
+gogogo
