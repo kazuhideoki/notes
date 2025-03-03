@@ -12,6 +12,8 @@
 
 ## Git Workflow
 
+Write commit messages that clearly indicate "which state/point in time" the repository was in, to make it easier to understand when reviewing later
+
 - Command to view daily changes: `git diff --stat`
 - Commit daily changes at end of day: `git commit -am "本日終了"`
 - Morning commit convention: `git commit -am "朝"`
@@ -26,6 +28,15 @@
 - Use emoji prefixes for categories (🔵 Yourstand, 🔴 dotfiles, ⭐️ Private)
 - Links: Use standard Markdown links `[text](url)` for external links
 - References: Use footnotes with `[^1]` syntax
+
+## File Modification Guidelines
+
+- For nesting in bullet points, use tabs instead of spaces.
+- When extracting part of a file's content into a separate file, unless otherwise instructed:
+  - Add a link to the new file in place of the extracted content in the original file. Use markdown link format without heading (example: [[New File Name]])
+  - The original file should remain, with only the extracted portion replaced by the link
+  - Add cross-references in both the original file and the new file
+  - In the new file, add a reference link at the end, without heading (example: ## References \n\n [[Original File Name]])
 
 ## Tools
 
