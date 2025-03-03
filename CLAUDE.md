@@ -31,6 +31,7 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 
 ## File Modification Guidelines
 
+- For personal matters without specific mention, please refer to that day's notes.
 - For nesting in bullet points, use tabs instead of spaces.
 - When extracting part of a file's content into a separate file, unless otherwise instructed:
   - Add a link to the new file in place of the extracted content in the original file. Use markdown link format without heading (example: [[New File Name]])
