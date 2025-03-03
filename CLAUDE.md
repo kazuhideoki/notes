@@ -2,7 +2,10 @@
 
 ## Document Structure
 
-- Daily notes format: `YYYY-MM-DD.md` in Daily/ directory
+- file name format
+  - Daily notes format: `YYYY-MM-DD.md` in Daily/ directory
+  - Other filenames should use snake_case with alphabetic characters
+  - Directory names should use PascalCase
 - Files created via the FSNotes app use the filename format `YYYYMMDDHHmmSS`
 - Store images in `i/` subdirectories
 - Use Markdown with appropriate headers and task lists `- [ ]`

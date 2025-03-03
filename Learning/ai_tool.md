@@ -11,6 +11,14 @@
 
 - [ ] 各タスクやプロジェクトでのコストは確認できるのか？
 
+### Claude Dev Container
+
+- `Dockerfile`, `devcontainer.json`, `init-firewall.sh` を設定できたらいけた。
+	- https://github.com/anthropics/claude-code/tree/main/.devcontainer
+	- [ ] 🔶 CLAUDE.md を整える。巷の設定参考に
+	- [ ] 必要なら `claude  --dangerously-skip-permissions` で立ち上げ前に config を設定したり、フラグを追加して実行する。
+
+
 ## AI関連開発費用
 
 - ChatGPT: 月3000 or 3万 
