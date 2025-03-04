@@ -32,9 +32,10 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 - Specific Directory
   - `Yourstand`
     - `1on1`/ `{Name}`
-      - ファイル名は `YYYY-MM-DD_1on1_{Name}.md` というフォーマット
-      - タイトルは `YYYY-MM-DD 1on1 Name` というフォーマット
-      - タイトルの下に `## 前回のまとめ [[リンク]]` で前回のまとめを3項目ぐらいにシンプルにまとめる
+      - File naming format: `YYYY-MM-DD_1on1_{Name}.md`
+      - Title format: `YYYY-MM-DD 1on1 Name`
+      - Below the title, add `## Summary of Previous Meeting [[link]]` with a simple summary of the previous meeting in about 3 points
+      - Also add a link to this file in the corresponding Daily note
 
 ## File Modification Guidelines
 
