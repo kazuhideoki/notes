@@ -29,6 +29,12 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 - Use emoji prefixes for categories (🔵 Yourstand, 🔴 dotfiles, ⭐️ Private)
 - Links: Use standard Markdown links `[text](url)` for external links
 - References: Use footnotes with `[^1]` syntax
+- Specific Directory
+  - `Yourstand`
+    - `1on1`/ `{Name}`
+      - ファイル名は `YYYY-MM-DD_1on1_{Name}.md` というフォーマット
+      - タイトルは `YYYY-MM-DD 1on1 Name` というフォーマット
+      - タイトルの下に `## 前回のまとめ [[リンク]]` で前回のまとめを3項目ぐらいにシンプルにまとめる
 
 ## File Modification Guidelines
 
