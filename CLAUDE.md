@@ -20,31 +20,46 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 - Morning commit convention: `git commit -am "朝"`
 - Pre-work commit convention: `git commit -am "仕事前"`
 
-## Note Formatting Guidelines
+## Formatting Guidelines
+
+### Basic Formatting Guidelines
 
 - Use level 1 header `#` for note title (typically date for daily notes)
 - Use level 2 headers `##` for major sections
 - Use level 3 headers `###` for subsections
 - Use task lists with `- [ ]` for tasks, `- [x]` for completed tasks
 - Use emoji prefixes for categories (🔵 Yourstand, 🔴 dotfiles, ⭐️ Private)
-- Links: Use standard Markdown links `[text](url)` for external links
+- External links: Use standard Markdown links `[text](url)`
+- Internal links: Markdown links `[[File Title]]` without heading
 - References: Use footnotes with `[^1]` syntax
-- Specific Directory
-  - `Yourstand`
-    - `1on1`/ `{Name}`
-      - File naming format: `YYYY-MM-DD_1on1_{Name}.md`
-      - Title format: `YYYY-MM-DD 1on1 Name`
-      - Below the title, add `## Summary of Previous Meeting [[link]]` with a simple summary of the previous meeting in about 3 points
-      - Also add a link to this file in the corresponding Daily note
+
+- Below the title, add `## Links` heading and add links to corresponding files with bullet points like `- [[link]]` as needed.
+  - In some cases, this section may be placed at the end of the file
+
+### Directory Structure & Specific Formatting Rules
+
+Define the directory structure, purpose and keywords of Japanese
+
+- `Yourstand` Directory related to work at Yourstand. Keywords: `ユアスタンド`, `YS`
+  - `1on1`/`{Name}` Records of 1on1 meetings. Directory created for each member. `oki` is for meetings between yourself and your supervisor, while others are for meetings with other members
+    - File naming format: `YYYY-MM-DD_1on1_{Name}.md`
+    - Title format: `YYYY-MM-DD 1on1 Name`
+    - Below the `## Links`, add `## Summary of Previous Meeting [[link]]` with a simple summary of the previous meeting in about 3 points
+  - `Backlog` Backlog の各課題に関するノート Keywords: `Backlog`, `課題`, `課題管理`, `タスク`
+    - File naming format: `{Task Key}.md`
+    - Title format: `{Task Name}` mostly in Japanese
+    - Below the `## Links`, add `## Backlog Link` heading and title and link of backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
 
 ## File Modification Guidelines
+
+### Extracting Content into Separate Files
 
 - For personal matters without specific mention, please refer to that day's notes.
 - When extracting part of a file's content into a separate file, unless otherwise instructed:
   - Add a link to the new file in place of the extracted content in the original file. Use markdown link format without heading (example: [[New File Name]])
   - The original file should remain, with only the extracted portion replaced by the link
   - Add cross-references in both the original file and the new file
-  - In the new file, add a reference link at the end, without heading (example: ## References \n\n [[Original File Name]])
+  - In the new file, add a reference link below the title, without heading (example: ## References \n\n [[Original File Name]])
 
 ## Tools
 

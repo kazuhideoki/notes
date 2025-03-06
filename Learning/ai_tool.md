@@ -35,6 +35,9 @@ claude mcp add postgres-server docker -- \
     "postgresql://postgres:postgres@host.docker.internal:6003/biz_local"
 ```
 
+🔶 devcontainer では MCP Server につなげない？
+- `claude --dangerously-skip-permissions` 直前に ip を付与 & そのip を init-firewallで除外設定する？？
+
 ## 生成AIの活用半年先まで
 
 - 目標
