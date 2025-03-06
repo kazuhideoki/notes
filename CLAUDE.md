@@ -51,6 +51,7 @@ Define the directory structure, purpose and keywords of Japanese
     - Below the `## Links`, add the source file reference (typically a daily note) like `[[YYYY-MM-DD]]`
     - Then add `## Backlog Link` heading followed by a blank line and the URL of the backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
     - Always add a `## メモ` heading before the task notes content
+    - When a Backlog task is mentioned in a daily note, add a link to the Backlog file at the end of the task (example: `- [ ] Task description [[PDM_S-1234]]`)
 
 ## File Modification Guidelines
 
@@ -63,6 +64,16 @@ Define the directory structure, purpose and keywords of Japanese
   - Add cross-references in both the original file and the new file
   - In the new file, add a reference link in the Links section (example: `[[Original File Name]]`)
   - For Backlog tasks, follow the specific format described in the Backlog section above
+
+### Backlog Task Management Process
+
+- When identifying Backlog tasks in daily notes:
+  1. Extract the task key (PDM_S-XXXX) from the URL or task description
+  2. Check if a file for that task already exists in the Yourstand/Backlog directory
+  3. If not, create a new file named after the task key (e.g., PDM_S-1234.md) following the Backlog file format
+  4. Add links to relevant daily notes in the Backlog file under the Links section
+  5. Add a link to the Backlog file at the end of the task item in the daily note
+  6. Ensure all information from the daily note about the task is reflected in the Backlog file
 
 ## Tools
 
