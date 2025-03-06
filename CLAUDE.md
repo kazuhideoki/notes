@@ -48,18 +48,21 @@ Define the directory structure, purpose and keywords of Japanese
   - `Backlog` Backlog の各課題に関するノート Keywords: `Backlog`, `課題`, `課題管理`, `タスク`
     - File naming format: `{Task Key}.md`
     - Title format: `{Task Name}` mostly in Japanese
-    - Below the `## Links`, add `## Backlog Link` heading and title and link of backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
+    - Below the `## Links`, add the source file reference (typically a daily note) like `[[YYYY-MM-DD]]`
+    - Then add `## Backlog Link` heading followed by a blank line and the URL of the backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
+    - Always add a `## メモ` heading before the task notes content
 
 ## File Modification Guidelines
 
-### Extracting Content into Separate Files
+### Extracting Content into Separate File
 
 - For personal matters without specific mention, please refer to that day's notes.
 - When extracting part of a file's content into a separate file, unless otherwise instructed:
   - Add a link to the new file in place of the extracted content in the original file. Use markdown link format without heading (example: [[New File Name]])
   - The original file should remain, with only the extracted portion replaced by the link
   - Add cross-references in both the original file and the new file
-  - In the new file, add a reference link below the title, without heading (example: ## References \n\n [[Original File Name]])
+  - In the new file, add a reference link in the Links section (example: `[[Original File Name]]`)
+  - For Backlog tasks, follow the specific format described in the Backlog section above
 
 ## Tools
 
