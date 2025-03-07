@@ -19,6 +19,7 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 - Commit daily changes at end of day: `git commit -am "本日終了"`
 - Morning commit convention: `git commit -am "朝"`
 - Pre-work commit convention: `git commit -am "仕事前"`
+- When committing, annotations like `Generated with Claude Code` in the message are unnecessary
 - Do not automatically commit or stage changes after work unless specifically instructed
 
 ## Formatting Guidelines
@@ -42,12 +43,14 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 Define the directory structure, purpose and keywords of Japanese
 
 - `AI` Directory for AI-related tools, notes, and resources
+
   - File names should reflect content (e.g., `ai_tool.md`, `mcp_server_guide.md`)
   - Title format should match file name in a readable format (e.g., "AIツールまとめ", "MCP サーバーの自作方法")
   - Include a `## Links` section with references to related documents
   - Use proper formatting with headers, code blocks, and task lists
 
 - `Learning` Directory for learning materials, technical notes, and references
+
   - Files should be organized by topic
   - Use descriptive file names and titles
   - Include code examples, commands, and explanations as needed
@@ -70,7 +73,7 @@ Define the directory structure, purpose and keywords of Japanese
 ### Internal Links Format
 
 - For internal links, always use the file title format (not file path)
-  - Correct: `[[File Title]]` 
+  - Correct: `[[File Title]]`
   - Incorrect: `[[directory/file_name]]`
 - This ensures consistent linking across all notes regardless of file location
 - When files are moved to different directories, update all references to use the title format
@@ -80,7 +83,7 @@ Define the directory structure, purpose and keywords of Japanese
 - For personal matters without specific mention, please refer to that day's notes.
 - When extracting part of a file's content into a separate file, follow these steps:
   1. Create the new file with appropriate name in the correct directory
-  2. Add standard structure including title (level 1 header) and a Links section 
+  2. Add standard structure including title (level 1 header) and a Links section
   3. Copy the content to be extracted into the new file
   4. In the original file, replace the extracted content with a link to the new file using title format `[[New File Title]]`
   5. Add cross-references in both the original file and the new file
