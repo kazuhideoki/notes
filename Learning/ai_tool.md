@@ -21,22 +21,43 @@
 
 ### MCP
 
-~/servers 配下で実行。任意の MCP サーバーを build できそう
+[[mcp_server_guide]]
+
+#### puppeteer
+
+- フロントエンド .env を `NEXT_PUBLIC_BACKEND_URL=http://host.docker.internal:8081` にする
+
+以下でやってみた。しかし、カレンダー選択が難しいようだ
+```
+UIテストを行う。以下の手順を行なって。
+
+## 手順
+- http://host.docker.internal:3003/admin/dashboard にアクセス
+- ログイン画面であればログインを試行する
+  - メールアドレス: cedar123pc@gmail.com
+  - パスワード: w2oHXjcR71XvqM4V5t2j
+- 会社選択画面に遷移していたら `沖株式会社` の文字をクリック
+- ダッシュボード画面に遷移していたら サイドバーの `施設` をクリックし、その下に表示される `沖自宅` をクリック
+- `沖自宅車庫` をクリック
+- `予約` タブをクリック
+- カレンダーのセル内の右の方をクリックして(現在時刻（青線で表現）以降をクリック)、予約作成ダイアログを表示する
+- 予約作成ダイアログでは以下を入力して送信する
+  - `充電利用` ラジオボタンをクリック
+  - `時間指定` ラジオボタンをクリック
+  - `開始日時` は 03月07日 19:19 とする。時間などの数字を直接クリックして時間入力する
+  - `開始日時` は 03月07日 21:21 とする。時間などの数字を直接クリックして時間入力する
+  - `充電出力` は 3
+  - `利用者` は誰でもいい、クリックご選択する
+  - `送信` をクリック
+- 予約が作成されたかどうか biz_local で最新の予約を確認して そのレコードが正しいかどうかチェックして
+
+## 注意
+
+- 画面のロードには平均2秒くらいかかるので考慮すること。
+- 必ずクリックのみを使って画面遷移すること
+- DBに直接Insertしてはいけない
 
 ```
-docker build -t mcp/postgres -f src/postgres/Dockerfile .
-```
-
-これでアクセスできた
-
-```sh
-claude mcp add postgres-server docker -- \
-    run -i --rm mcp/postgres \
-    "postgresql://postgres:postgres@host.docker.internal:6003/biz_local"
-```
-
-🔶 devcontainer では MCP Server につなげない？
-- `claude --dangerously-skip-permissions` 直前に ip を付与 & そのip を init-firewallで除外設定する？？
 
 ## 生成AIの活用半年先まで
 
