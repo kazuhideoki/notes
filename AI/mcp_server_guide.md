@@ -7,6 +7,14 @@
 [[2025-03-07]]
 [[2025-03-08]]
 
+## 自作方法
+
+https://github.com/modelcontextprotocol/typescript-sdk を使えばサーバーやクライアントを簡単に生成できそう。
+
+- stdio でローカル環境で CLI 連携できる
+- HTTP with SSE でサーバーを立ち上げられる
+- クライアントは HTTP with SSE のサーバーに対して接続するイメージ
+
 ## 基本情報
 
 ~/servers 配下で実行。任意の MCP サーバーを build できる
