@@ -45,7 +45,7 @@ Define the directory structure, purpose and keywords of Japanese
 - `AI` Directory for AI-related tools, notes, and resources
 
   - File names should reflect content (e.g., `ai_tool.md`, `mcp_server_guide.md`)
-  - Title format should match file name in a readable format (e.g., "AIツールまとめ", "MCP サーバーの自作方法")
+  - Title format should match file name in a readable format (e.g., "AIツールまとめ", "MCP サーバーまとめ")
   - Include a `## Links` section with references to related documents
   - Use proper formatting with headers, code blocks, and task lists
 
