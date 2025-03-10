@@ -35,8 +35,9 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 - Internal links: Markdown links `[[File Title]]` without heading
 - References: Use footnotes with `[^1]` syntax
 
-- Below the title, add `## Links` heading and add links to corresponding files with bullet points like `- [[link]]` as needed.
-  - In some cases, this section may be placed at the end of the file
+- Internal links structure depends on the file type:
+  - For non-daily notes: Add a `## Links` section directly below the title with bullet points to related files
+  - For daily notes: Do NOT add a separate `## Links` section. Instead, add internal links directly in the relevant task items
 
 ### Directory Structure & Specific Formatting Rules
 
@@ -63,8 +64,8 @@ Define the directory structure, purpose and keywords of Japanese
   - `Backlog` Backlog の各課題に関するノート Keywords: `Backlog`, `課題`, `課題管理`, `タスク`
     - File naming format: `{Task Key}.md`
     - Title format: `{Task Name}` mostly in Japanese
-    - Below the `## Links`, add the source file reference (typically a daily note) like `[[YYYY-MM-DD]]`
-    - Then add `## Backlog Link` heading followed by a blank line and the URL of the backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
+    - Include a `## Links` section with references to related daily notes (e.g., `- [[YYYY-MM-DD]]`)
+    - Add `## Backlog Link` heading followed by a blank line and the URL of the backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
     - Always add a `## メモ` heading before the task notes content
     - When a Backlog task is mentioned in a daily note, add a link to the Backlog file at the end of the task (example: `- [ ] Task description [[PDM_S-1234]]`)
 
