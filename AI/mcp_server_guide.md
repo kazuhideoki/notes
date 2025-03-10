@@ -50,3 +50,5 @@ claude mcp add postgres-server docker -- \
 🔶 devcontainer では MCP Server につなげない問題
 
 - 解決策: `claude --dangerously-skip-permissions` 直前に IP を付与し、その IP を init-firewall で除外設定する。 -> 難しい
+
+2025-03-10 -> [Delete Project User](https://developer.nulab.com/docs/backlog/api/2/delete-project-user/) までやった
