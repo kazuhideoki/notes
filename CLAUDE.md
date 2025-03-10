@@ -62,7 +62,10 @@ Define the directory structure, purpose and keywords of Japanese
   - `1on1`/`{Name}` Records of 1on1 meetings. Directory created for each member. `oki` is for meetings between yourself and your supervisor, while others are for meetings with other members
     - File naming format: `YYYY-MM-DD_1on1_{Name}.md`
     - Title format: `YYYY-MM-DD 1on1 Name`
-    - Below the `## Links`, add `## Summary of Previous Meeting [[link]]` with a simple summary of the previous meeting in about 3 points
+    - Always create mutual links between daily notes and 1on1 files:
+      - Add the daily note link in the 1on1 file's `## Links` section
+      - Add the 1on1 file link to the relevant task in the daily note
+    - Below the `## Links`, add `## Summary of Previous Meeting [[link]]` with a simple summary of the previous meeting in about 3-4 bullet points
   - `Backlog` Backlog の各課題に関するノート Keywords: `Backlog`, `課題`, `課題管理`, `タスク`
     - File naming format: `{Task Key}.md`
     - Title format: `{Task Name}` mostly in Japanese
