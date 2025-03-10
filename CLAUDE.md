@@ -21,6 +21,8 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 - Pre-work commit convention: `git commit -am "仕事前"`
 - When committing, annotations like `Generated with Claude Code` in the message are unnecessary
 - Do not automatically commit or stage changes after work unless specifically instructed
+- NEVER automatically commit changes - always wait for an explicit instruction to commit
+- File creation or modification isn't enough reason to commit - only commit when directly asked
 
 ## Formatting Guidelines
 
@@ -82,15 +84,17 @@ Define the directory structure, purpose and keywords of Japanese
 ### Extracting Content into Separate File
 
 - For personal matters without specific mention, please refer to that day's notes.
-- When extracting part of a file's content into a separate file, follow these steps:
+- When creating a new file template or extracting content to a separate file, follow these steps:
   1. Create the new file with appropriate name in the correct directory
-  2. Add standard structure including title (level 1 header) and a Links section
-  3. Copy the content to be extracted into the new file
-  4. In the original file, replace the extracted content with a link to the new file using title format `[[New File Title]]`
-  5. Add cross-references in both the original file and the new file
-  6. In the new file's Links section, add reference links to all related files (example: `[[Original File Title]]`)
-  7. Update any other files that might reference the extracted content
-  8. For Backlog tasks, follow the specific format described in the Backlog section above
+  2. Add minimal structure including:
+     - Title (level 1 header matching the filename)
+     - A `## Links` section with references to related files
+     - A minimal content section (e.g., `## 内容` or `## 概要`) with a brief one-line description
+  3. Do NOT populate the file with detailed content unless explicitly requested
+  4. Do NOT add sections, headings, or content structure beyond the basics unless specifically instructed
+  5. In the original file, replace extracted content or add a link to the new file using title format `[[New File Title]]`
+  6. For Backlog tasks, follow the specific format described in the Backlog section above
+  7. NEVER create fictional content - only extract actual content from existing sources
 
 ### Content Organization by Topic
 
