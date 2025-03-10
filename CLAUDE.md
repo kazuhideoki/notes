@@ -19,7 +19,7 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 - Commit daily changes at end of day: `git commit -am "本日終了"`
 - Morning commit convention: `git commit -am "朝"`
 - Pre-work commit convention: `git commit -am "仕事前"`
-- When committing, annotations like `Generated with Claude Code` in the message are unnecessary
+- When committing, annotations like `Generated with Claude Code` in the message are unnecessary - never include these
 - Do not automatically commit or stage changes after work unless specifically instructed
 - NEVER automatically commit changes - always wait for an explicit instruction to commit
 - File creation or modification isn't enough reason to commit - only commit when directly asked
