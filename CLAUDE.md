@@ -98,6 +98,11 @@ Define the directory structure, purpose and keywords of Japanese
   5. In the original file, replace extracted content or add a link to the new file using title format `[[New File Title]]`
   6. For Backlog tasks, follow the specific format described in the Backlog section above
   7. NEVER create fictional content - only extract actual content from existing sources
+  8. When asked to extract content to a Backlog task file or create a new task file:
+     - Always check current day's note (`Daily/YYYY-MM-DD.md`) first for the most relevant content
+     - If content or task isn't in current day's note, search for it in previous notes before creating content
+     - Add links to all relevant daily notes in the Backlog file's Links section, including the current day
+     - Add link to the Backlog file from all related tasks in daily notes
 
 ### Content Organization by Topic
 
