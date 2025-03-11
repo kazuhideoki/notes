@@ -126,6 +126,31 @@ Define the directory structure, purpose and keywords of Japanese
   4. Add links to relevant daily notes in the Backlog file under the Links section
   5. Add a link to the Backlog file at the end of the task item in the daily note
   6. Ensure all information from the daily note about the task is reflected in the Backlog file
+  7. When a task is mentioned in a new daily note, always add that day's link to the Backlog file's Links section
+
+### 1on1 Meeting Notes Process
+
+- When creating a new 1on1 meeting note:
+
+  1. Use `GlobTool` to check if a file for today's meeting already exists
+  2. Create the file with the format: `YYYY-MM-DD_1on1_{Name}.md` in the appropriate directory
+  3. Set up the basic structure:
+
+     ```
+     # YYYY-MM-DD 1on1 Name
+
+     ## Links
+
+     - [[YYYY-MM-DD]] (link to today's daily note)
+
+     ## Summary of Previous Meeting [[previous_meeting_file_name]]
+
+     - (concise bullet points summarizing key points from previous meeting)
+     ```
+
+  4. Find and read the previous meeting file to create a meaningful summary (usually 3-4 bullet points)
+  5. Update today's daily note to include a link to the 1on1 meeting file
+  6. Add today's date to any Backlog tasks mentioned in the daily note
 
 ## Tools
 
