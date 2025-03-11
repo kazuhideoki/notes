@@ -26,6 +26,14 @@ Write commit messages that clearly indicate "which state/point in time" the repo
 
 ## Formatting Guidelines
 
+### Daily Note Identification
+
+- When starting work, first identify today's daily note:
+  - Check the most recently created note in the Daily/ directory
+  - The current day's note will typically be named in the format `YYYY-MM-DD.md`
+  - Always make sure you're working with and referencing the correct day's note
+  - When creating or modifying content, always check how it relates to today's daily note first
+
 ### Basic Formatting Guidelines
 
 - Use level 1 header `#` for note title (typically date for daily notes)
@@ -98,7 +106,10 @@ Define the directory structure, purpose and keywords of Japanese
   5. In the original file, replace extracted content or add a link to the new file using title format `[[New File Title]]`
   6. For Backlog tasks, follow the specific format described in the Backlog section above
   7. NEVER create fictional content - only extract actual content from existing sources
-  8. When asked to extract content to a Backlog task file or create a new task file:
+  8. **Always create mutual links between daily notes and new files:**
+     - Add the daily note link in the new file's `## Links` section
+     - Add the new file link to the relevant task or section in the daily note
+  9. When asked to extract content to a Backlog task file or create a new task file:
      - Always check current day's note (`Daily/YYYY-MM-DD.md`) first for the most relevant content
      - If content or task isn't in current day's note, search for it in previous notes before creating content
      - Add links to all relevant daily notes in the Backlog file's Links section, including the current day
