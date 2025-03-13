@@ -7,6 +7,7 @@
 [[2025-03-07]]
 [[2025-03-08]]
 [[2025-03-10]]
+[[2025-03-13]]
 
 ## 自作方法
 
@@ -52,3 +53,6 @@ claude mcp add postgres-server docker -- \
 - 解決策: `claude --dangerously-skip-permissions` 直前に IP を付与し、その IP を init-firewall で除外設定する。 -> 難しい
 
 2025-03-10 -> [Delete Project User](https://developer.nulab.com/docs/backlog/api/2/delete-project-user/) までやった
+
+### 残タスク
+
