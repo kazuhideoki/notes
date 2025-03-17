@@ -1,6 +1,6 @@
 # CLAUDE.md - Master Guide
 
-This is the master CLAUDE.md file containing common guidelines. Each directory also has its own CLAUDE.md with specific guidelines for that directory's content.
+This is the master CLAUDE.md file containing common guidelines. Only major directories (Daily/ and Yourstand/) have their own CLAUDE.md files with specific guidelines for that directory's content.
 
 ## Directory Structure
 
@@ -74,6 +74,35 @@ When creating a new file or extracting content to a separate file:
    - Add the daily note link in the new file's `## Links` section
    - Add the new file link to the relevant task or section in the daily note
 7. NEVER create fictional content - only extract actual content from existing sources
+
+## Subdirectory CLAUDE.md Files
+
+Only larger and more complex directories (Daily/ and Yourstand/) have their own CLAUDE.md files. These files follow a standard format:
+
+```markdown
+# CLAUDE.md for <Directory Name> Directory
+
+<Brief description of the directory purpose>
+
+## Directory Structure
+<Description of directory structure, including subdirectories>
+
+## File Naming Conventions
+- File naming rules specific to this directory
+- Title formatting conventions
+- Any directory-specific naming requirements
+
+## Content Guidelines
+- Content expectations for this directory
+- Required sections or elements
+- Directory-specific formatting rules
+
+## File Templates
+<Example templates for common file types in this directory>
+
+## <Additional sections as needed>
+<Process guidelines, workflows, or other directory-specific information>
+```
 
 ## Tools
 
