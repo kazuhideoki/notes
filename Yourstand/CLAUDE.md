@@ -2,7 +2,20 @@
 
 Directory for work-related notes at Yourstand. Keywords: `ユアスタンド`, `YS`
 
-## Subdirectories and File Formats
+## Directory Structure
+
+- Primary directory with subdirectories for specific types of content
+- `1on1/` - Directory for one-on-one meeting notes, with subdirectories for each team member
+- `Backlog/` - Directory for Backlog task notes
+- `Recruitment/` - Directory for recruitment-related notes
+
+## File Naming Conventions
+
+- All files should follow standard naming conventions as defined in the master CLAUDE.md
+- Title should match the file name in a readable format
+- Follow standard linking conventions as defined in the master CLAUDE.md
+
+## Subdirectory Guidelines
 
 ### 1on1 Directory
 
@@ -40,7 +53,9 @@ Notes related to recruitment activities
 - Title should be the file name converted to a readable format
 - Follow standard linking conventions as defined in the master CLAUDE.md
 
-## Backlog Task Management Process
+## Process Guidelines
+
+### Backlog Task Management Process
 
 1. Extract the task key (PDM_S-XXXX) from the URL or task description in daily notes
 2. Check if a file for that task already exists in the Yourstand/Backlog directory
@@ -49,7 +64,7 @@ Notes related to recruitment activities
 5. Add a link to the Backlog file at the end of the task item in the daily note
 6. Ensure all information from the daily note about the task is reflected in the Backlog file
 
-## 1on1 Meeting Notes Process
+### 1on1 Meeting Notes Process
 
 When creating a new 1on1 meeting note:
 
@@ -57,7 +72,7 @@ When creating a new 1on1 meeting note:
 2. Create the file with the format: `YYYY-MM-DD_1on1_{Name}.md` in the appropriate directory
 3. Set up the basic structure:
 
-```
+```markdown
 # YYYY-MM-DD 1on1 Name
 
 ## Links
