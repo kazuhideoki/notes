@@ -77,7 +77,7 @@ When creating a new file or extracting content to a separate file:
 
 ## Subdirectory CLAUDE.md Files
 
-Only larger and more complex directories (Daily/ and Yourstand/) have their own CLAUDE.md files. These files follow a standard format:
+Only larger and more complex directories (Daily/ and Yourstand/) have their own CLAUDE.md files. These files contain directory-specific guidelines and should follow this standard format:
 
 ```markdown
 # CLAUDE.md for <Directory Name> Directory
@@ -85,22 +85,34 @@ Only larger and more complex directories (Daily/ and Yourstand/) have their own 
 <Brief description of the directory purpose>
 
 ## Directory Structure
+
 <Description of directory structure, including subdirectories>
 
 ## File Naming Conventions
+
 - File naming rules specific to this directory
 - Title formatting conventions
 - Any directory-specific naming requirements
 
 ## Content Guidelines
+
 - Content expectations for this directory
 - Required sections or elements
 - Directory-specific formatting rules
 
+## Editing process
+
+- Step-by-step process for creating/editing files in this directory
+- File creation workflows specific to this content type
+- Tasks to perform when updating content in this directory
+- Integration with related files (e.g., maintaining links with daily notes and other relevant files)
+
 ## File Templates
+
 <Example templates for common file types in this directory>
 
 ## <Additional sections as needed>
+
 <Process guidelines, workflows, or other directory-specific information>
 ```
 
