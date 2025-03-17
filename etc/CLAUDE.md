@@ -6,7 +6,7 @@ Directory for miscellaneous files that don't fit into other categories.
 
 - Use descriptive file names in snake_case
 - Group related files together where possible
-- Include a `## Links` section below the title with references to related documents and daily notes
+- Follow standard linking conventions as defined in the master CLAUDE.md
 
 ## Content Guidelines
 
@@ -38,8 +38,3 @@ Main content organized appropriately for the file type.
 Additional notes or context.
 ```
 
-## Cross-referencing
-
-- When referencing miscellaneous files in daily notes, add links to the relevant etc/ directory file
-- Consider if content might be better organized in a more specific directory as it develops
-- If multiple related files accumulate on a single topic, consider creating a new top-level directory

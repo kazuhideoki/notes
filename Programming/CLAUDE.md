@@ -7,7 +7,7 @@ Directory for programming-related notes, articles, and resources.
 - Organize files by programming language, framework, or topic
 - Use descriptive file names in snake_case (e.g., `react_hooks_guide.md`, `python_data_structures.md`)
 - For survey or research notes, place in the `Survey/` subdirectory
-- Include a `## Links` section below the title with references to related documents and daily notes
+- Follow standard linking conventions as defined in the master CLAUDE.md
 
 ## Content Guidelines
 
@@ -75,8 +75,3 @@ Comparison table or list of alternatives.
 Recommendations based on the survey.
 ```
 
-## Cross-referencing
-
-- When documenting programming solutions in daily notes, consider extracting them to a dedicated file in this directory
-- When referencing programming topics in daily notes, add links to the relevant Programming directory file
-- Create connections between related programming topics through the Links section

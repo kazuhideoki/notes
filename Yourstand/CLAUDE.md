@@ -14,9 +14,7 @@ Directory for work-related notes at Yourstand. Keywords: `ユアスタンド`, `
 
 - File naming format: `YYYY-MM-DD_1on1_{Name}.md`
 - Title format: `YYYY-MM-DD 1on1 Name`
-- Always create mutual links between daily notes and 1on1 files:
-  - Add the daily note link in the 1on1 file's `## Links` section
-  - Add the 1on1 file link to the relevant task in the daily note
+- Follow standard linking conventions for 1on1 files and daily notes
 - Below the `## Links`, add `## Summary of Previous Meeting [[link]]` with a simple summary of the previous meeting in about 3-4 bullet points
 
 ### Backlog Directory
@@ -27,7 +25,7 @@ Notes related to Backlog tasks. Keywords: `Backlog`, `課題`, `課題管理`, `
 
 - File naming format: `{Task Key}.md` (e.g., `PDM_S-1234.md`)
 - Title format: `{Task Name}` mostly in Japanese
-- Include a `## Links` section with references to related daily notes (e.g., `- [[YYYY-MM-DD]]`)
+- Follow standard linking conventions as defined in the master CLAUDE.md
 - Add `## Backlog Link` heading followed by a blank line and the URL of the backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
 - Always add a `## メモ` heading before the task notes content
 - When a Backlog task is mentioned in a daily note, add a link to the Backlog file at the end of the task (example: `- [ ] Task description [[PDM_S-1234]]`)
@@ -40,7 +38,7 @@ Notes related to recruitment activities
 
 - File names should use snake_case in English (`new_grad_test_plan.md`, etc.)
 - Title should be the file name converted to a readable format
-- Include links to related daily notes in the `## Links` section
+- Follow standard linking conventions as defined in the master CLAUDE.md
 
 ## Backlog Task Management Process
 
@@ -50,7 +48,6 @@ Notes related to recruitment activities
 4. Add links to relevant daily notes in the Backlog file under the Links section
 5. Add a link to the Backlog file at the end of the task item in the daily note
 6. Ensure all information from the daily note about the task is reflected in the Backlog file
-7. When a task is mentioned in a new daily note, always add that day's link to the Backlog file's Links section
 
 ## 1on1 Meeting Notes Process
 

@@ -40,8 +40,10 @@ This is the master CLAUDE.md file containing common guidelines. Each directory a
 - External links: Use standard Markdown links `[text](url)`
 - Internal links: Markdown links `[[File Title]]` without heading
 - References: Use footnotes with `[^1]` syntax
-- For non-daily notes: Add a `## Links` section directly below the title with bullet points to related files
-- For daily notes: Do NOT add a separate `## Links` section. Instead, add internal links directly in the relevant task items
+- All non-daily files must maintain mutual links:
+  - Add a `## Links` section directly below the title with bullet points to related files
+  - When referencing another file, ensure both files link to each other
+- For daily notes only: Do NOT add a separate `## Links` section. Instead, add internal links directly in the relevant task items
 
 ## Git Workflow
 
@@ -56,9 +58,9 @@ This is the master CLAUDE.md file containing common guidelines. Each directory a
 - NEVER automatically commit changes - always wait for an explicit instruction to commit
 - File creation or modification isn't enough reason to commit - only commit when directly asked
 
-## Content Extraction Guidelines
+## Content Creation/Extraction Guidelines
 
-When extracting content to a separate file:
+When creating a new file or extracting content to a separate file:
 
 1. Create the new file with appropriate name in the correct directory
 2. Add minimal structure including:
@@ -68,7 +70,7 @@ When extracting content to a separate file:
 3. Do NOT populate the file with detailed content unless explicitly requested
 4. Do NOT add sections, headings, or content structure beyond the basics unless specifically instructed
 5. In the original file, replace extracted content or add a link to the new file using title format `[[New File Title]]`
-6. Always create mutual links between daily notes and new files:
+6. For links with daily notes:
    - Add the daily note link in the new file's `## Links` section
    - Add the new file link to the relevant task or section in the daily note
 7. NEVER create fictional content - only extract actual content from existing sources

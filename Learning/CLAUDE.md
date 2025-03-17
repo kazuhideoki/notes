@@ -6,7 +6,7 @@ Directory for learning materials, technical notes, and references.
 
 - Files should be organized by topic
 - Use descriptive file names in snake_case (e.g., `network_learning_notes.md`, `computation.md`)
-- Include a `## Links` section below the title with references to related documents and daily notes where the learning was referenced
+- Follow standard linking conventions as defined in the master CLAUDE.md
 - Use clear heading structures to organize complex topics
 
 ## Content Guidelines
@@ -52,8 +52,3 @@ Links to external resources, documentation, or further reading.
 - Note questions that arose during learning and their answers
 - Track progress over time by linking to daily notes where learning occurred
 
-## Cross-referencing
-
-- When learning new material that's documented in daily notes, consider extracting it to a dedicated file in this directory
-- When referencing learning materials in daily notes, add links to the relevant Learning directory file
-- Create connections between related learning topics through the Links section

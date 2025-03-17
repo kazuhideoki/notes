@@ -13,9 +13,6 @@
 
 - For daily notes, do NOT add a separate `## Links` section
 - Instead, add internal links directly in the relevant task items
-- Always use file title format for internal links (not file paths)
-  - Correct: `[[File Title]]`
-  - Incorrect: `[[directory/file_name]]`
 
 ## Backlog Task Management
 

@@ -6,7 +6,7 @@ Directory for AI-related tools, notes, and resources.
 
 - File names should reflect content (e.g., `ai_tool.md`, `mcp_server_guide.md`)
 - Title format should match file name in a readable format (e.g., "AI Tools Summary", "MCP Server Guide")
-- Include a `## Links` section with references to related documents
+- Follow standard linking conventions as defined in the master CLAUDE.md
 - Use proper formatting with headers, code blocks, and task lists
 
 ## Content Guidelines
@@ -45,7 +45,3 @@ Additional notes, limitations, or considerations.
 - Store images in `i/` subdirectory
 - Reference images using standard Markdown image syntax: `![Description](i/image_file.png)`
 
-## Cross-referencing
-
-- When referencing AI tools or concepts in daily notes, add links to the relevant AI directory file
-- When creating new AI-related content in daily notes that should be preserved, extract it to a dedicated file in this directory
