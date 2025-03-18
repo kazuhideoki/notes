@@ -1,6 +1,10 @@
 # 2025-01-14 1on1 Morishita
 
-## 前回のまとめ
+## Links
+
+- [[2025-01-21_1on1_morishita]]
+
+## Summary of Previous Meeting
 
 前回のミーティングはありません
 

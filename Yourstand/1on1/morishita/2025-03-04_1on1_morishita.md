@@ -1,6 +1,12 @@
 # 2025-03-04 1on1 Morishita
 
-## 前回のまとめ [[2025-02-18_1on1_morishita]]
+## Links
+
+- [[2025-02-18_1on1_morishita]]
+- [[2025-03-18_1on1_morishita]]
+- [[2025-03-04]]
+
+## Summary of Previous Meeting
 
 - サーバー作業に関してDevinとの連携に課題があった
 - アプリより多くのサーバー作業に従事している状況について意見交換

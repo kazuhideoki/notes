@@ -2,9 +2,10 @@
 
 ## Links
 
+- [[2025-03-04_1on1_morishita]]
 - [[2025-03-18]]
 
-## Summary of Previous Meeting [[2025-03-04_1on1_morishita]]
+## Summary of Previous Meeting
 
 - サーバータスクではDevinはあまり使わず、Claude 3.7を活用
 - 生成AI活用と目標設定に関する見通しについて議論
