@@ -28,7 +28,7 @@ Directory for work-related notes at Yourstand. Keywords: `ユアスタンド`, `
 - File naming format: `YYYY-MM-DD_1on1_{Name}.md`
 - Title format: `YYYY-MM-DD 1on1 Name`
 - Follow standard linking conventions for 1on1 files and daily notes
-- Below the `## Links`, add `## Summary of Previous Meeting [[link]]` with a simple summary of the previous meeting in about 3-4 bullet points
+- Below the `## Links`, add `## Summary of Previous Meeting` with a simple summary of the previous meeting in about 3-4 bullet points
 
 #### Editing process
 
@@ -36,11 +36,11 @@ When creating a new 1on1 meeting note:
 
 1. Use `GlobTool` to check if a file for today's meeting already exists
 2. Create the file with the format: `YYYY-MM-DD_1on1_{Name}.md` in the appropriate directory
-3. Set up the basic structure:
-
+3. Set up the basic structure following the template
 4. Find and read the previous meeting file to create a meaningful summary (usually 3-4 bullet points)
 5. Update today's daily note to include a link to the 1on1 meeting file
 6. Add today's date to any Backlog tasks mentioned in the daily note
+7. In the previous meeting file, add a link to the new meeting file under the ## Links section to create bidirectional linking
 
 #### File Template
 
@@ -49,9 +49,12 @@ When creating a new 1on1 meeting note:
 
 ## Links
 
+- [[YYYY-MM-DD_1on1_Name]] (link to previous meeting)
+- (Next meeting link will be added when created)
 - [[YYYY-MM-DD]] (link to today's daily note)
+- (Other related file links)
 
-## Summary of Previous Meeting [[previous_meeting_file_name]]
+## Summary of Previous Meeting
 
 - (concise bullet points summarizing key points from previous meeting)
 ```
