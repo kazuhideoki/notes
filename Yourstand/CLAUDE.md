@@ -42,8 +42,9 @@ When creating a new 1on1 meeting note:
 6. Add today's date to any Backlog tasks mentioned in the daily note
 7. In the previous meeting file, add a link to the new meeting file under the ## Links section to create bidirectional linking
 
-#### File Template
+#### File Templates
 
+**1on1 Meeting Template:**
 ```markdown
 # YYYY-MM-DD 1on1 Name
 
@@ -57,6 +58,23 @@ When creating a new 1on1 meeting note:
 ## Summary of Previous Meeting
 
 - (concise bullet points summarizing key points from previous meeting)
+```
+
+**Backlog Task Template:**
+```markdown
+# Task Title
+
+## Links
+
+- [[YYYY-MM-DD]]
+
+## Backlog Link
+
+https://yourstand.backlog.com/view/PDM_S-XXXX
+
+## メモ
+
+Backlog課題の内容
 ```
 
 ### Backlog Directory
@@ -75,12 +93,11 @@ Notes related to Backlog tasks. Keywords: `Backlog`, `課題`, `課題管理`, `
 
 #### Editing process
 
-1. Extract the task key (PDM_S-XXXX) from the URL or task description in daily notes
-2. Check if a file for that task already exists in the Yourstand/Backlog directory
-3. If not, create a new file named after the task key (e.g., PDM_S-1234.md)
-4. Add links to relevant daily notes in the Backlog file under the Links section
-5. Add a link to the Backlog file at the end of the task item in the daily note
-6. Ensure all information from the daily note about the task is reflected in the Backlog file
+1. Backlogリンク（`https://yourstand.backlog.com/view/PDM_S-XXXX`）がタスクに含まれていたら、Backlog課題として認識する
+2. 対応するBacklog課題ノートをYourstand/Backlog/配下に`PDM_S-XXXX.md`の形式で作成する
+3. 日次ノートのタスク項目に`[[PDM_S-XXXX]]`の形式でリンクを追加する
+4. Backlog課題ノートにも関連する日次ノートへのリンクを追加する
+5. 必要に応じて、コンセプトノートを作成し相互にリンクする
 
 ### Recruitment Directory
 
