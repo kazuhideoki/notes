@@ -77,7 +77,21 @@ When creating a new file or extracting content to a separate file:
 
 ## Subdirectory CLAUDE.md Files
 
-Only larger and more complex directories (Daily/ and Yourstand/) have their own CLAUDE.md files. These files contain directory-specific guidelines and should follow this standard format:
+Only larger and more complex directories (Daily/ and Yourstand/) possibly have their own CLAUDE.md files. These files contain directory-specific guidelines that MUST be consulted before performing operations in these directories.
+
+### IMPORTANT: Directory-Specific Operations
+
+- When creating, editing, or processing files (like Daily/ or Yourstand/ directories):
+
+  1. ALWAYS first check the directory's CLAUDE.md file (e.g., `/Daily/CLAUDE.md` or `/Yourstand/CLAUDE.md`)
+  2. Follow the directory-specific formats, templates, and workflows defined in that file
+  3. Only after understanding the specific requirements should you proceed with operations
+
+- Examples:
+  - For 1on1 meeting notes in Yourstand/1on1/, check Yourstand/CLAUDE.md for proper file naming format (YYYY-MM-DD*1on1*{Name}.md) and required content structure
+  - For Daily notes, consult Daily/CLAUDE.md for the correct template and task formatting
+
+### Standard Format for Subdirectory CLAUDE.md Files
 
 ```markdown
 # CLAUDE.md for <Directory Name> Directory

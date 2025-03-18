@@ -116,3 +116,10 @@ https://drive.google.com/drive/folders/1_J2CeMtId60orz7f9FxkKYITjw-8vjD8
 	- ログ(エラーとか、監視とか)
 	- スケーラビリティ
 		- DB, インフラ
+
+## 調査
+
+https://chatgpt.com/share/67d8c00a-7654-800a-8840-f66eeb9baba9
+-  RDBが無難。
+	- インフラとの組み合わせで、多分大丈夫だが、パフォーマンスやキャッシュなどを実現できるかは事前調査
+- 最初はバッチ処理、あとからリアルタイムレスポンス（WebSocketなど）を検討しても良さそう
