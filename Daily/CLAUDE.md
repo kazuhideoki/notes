@@ -25,6 +25,13 @@ Directory for daily notes and activity records.
   - If there's a task key (PDM_S-XXXX), check if a corresponding Backlog file exists in the Yourstand/Backlog directory
   - If it doesn't exist, create a new file based on the task key
 
+## Editing Process
+
+- ALWAYS check the most recent daily note (today's date) using View tool before working
+- Check yesterday's note and today's note to understand context and pending tasks
+- When creating a new file referenced in a daily note, ensure links are added to ALL daily notes that reference it
+- When creating files based on tasks, check ALL daily notes that might reference the task
+
 ## File Templates
 
 ```markdown

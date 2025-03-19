@@ -45,6 +45,7 @@ When creating a new 1on1 meeting note:
 #### File Templates
 
 **1on1 Meeting Template:**
+
 ```markdown
 # YYYY-MM-DD 1on1 Name
 
@@ -61,6 +62,7 @@ When creating a new 1on1 meeting note:
 ```
 
 **Backlog Task Template:**
+
 ```markdown
 # Task Title
 
@@ -93,11 +95,12 @@ Notes related to Backlog tasks. Keywords: `Backlog`, `課題`, `課題管理`, `
 
 #### Editing process
 
-1. Backlogリンク（`https://yourstand.backlog.com/view/PDM_S-XXXX`）がタスクに含まれていたら、Backlog課題として認識する
-2. 対応するBacklog課題ノートをYourstand/Backlog/配下に`PDM_S-XXXX.md`の形式で作成する
-3. 日次ノートのタスク項目に`[[PDM_S-XXXX]]`の形式でリンクを追加する
-4. Backlog課題ノートにも関連する日次ノートへのリンクを追加する
-5. 必要に応じて、コンセプトノートを作成し相互にリンクする
+1. ALWAYS check the most recent daily note (today's date) using View tool before starting work
+2. If a Backlog link (`https://yourstand.backlog.com/view/PDM_S-XXXX`) is included in a task, recognize it as a Backlog task
+3. Create a corresponding Backlog task note under Yourstand/Backlog/ with the format `PDM_S-XXXX.md`
+4. Add links in the format `[[PDM_S-XXXX]]` to task items in all related daily notes (including the current day)
+5. Also add links to all related daily notes in the Backlog task note
+6. When necessary, create concept notes and link them bidirectionally
 
 ### Recruitment Directory
 
