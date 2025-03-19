@@ -12,6 +12,7 @@ Directory for work-related notes at Yourstand. Keywords: `ユアスタンド`, `
 ## File Naming Conventions
 
 - All files should follow standard naming conventions as defined in the master CLAUDE.md
+- Specifically, filenames should use snake_case with alphabetic characters in English only
 - Title should match the file name in a readable format
 - Follow standard linking conventions as defined in the master CLAUDE.md
 
