@@ -40,10 +40,31 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 - External links: Use standard Markdown links `[text](url)`
 - Internal links: Markdown links `[[File Title]]` without heading
 - References: Use footnotes with `[^1]` syntax
-- All non-daily files must maintain mutual links:
-  - Add a `## Links` section directly below the title with bullet points to related files
-  - When referencing another file, ensure both files link to each other
-- For daily notes only: Do NOT add a separate `## Links` section. Instead, add internal links directly in the relevant task items
+
+### Mutual Link System - CRITICAL
+
+Mutual linking is the foundation of knowledge management and **must be implemented**.
+
+#### Mutual Link Basic Principles
+
+1. **All non-daily files must maintain mutual links**:
+   - All files must have a `## Links` section directly below the title
+   - List related files as bullet points
+   - Establish bidirectional links with all referenced files
+
+2. **Link format**: Internal links must use the `[[File Title]]` format (without headings)
+
+3. **Special rule for daily notes**:
+   - Daily notes do NOT have a separate `## Links` section
+   - Instead, add internal links directly within relevant task items
+
+#### Mutual Link Procedure for New Files
+
+When creating a new file, always:
+
+1. New file side: Add links to the source file in the `## Links` section
+2. Source file side: Add links to the new file (in task items for daily notes, in the `## Links` section for other files)
+3. Related file side: Add links to the new file in the `## Links` section of any other related files
 
 ## Git Workflow
 
@@ -64,16 +85,20 @@ When creating a new file or extracting content to a separate file:
 
 1. Create the new file with appropriate name in the correct directory
 2. Add minimal structure including:
-   - Title (level 1 header matching the filename)
-   - A `## Links` section with references to related files
+   - Title (level 1 header matching the filename) 
+   - **REQUIRED**: A `## Links` section with references to related files
    - A minimal content section (e.g., `## 内容` or `## 概要`) with a brief one-line description
-3. Do NOT populate the file with detailed content unless explicitly requested
-4. Do NOT add sections, headings, or content structure beyond the basics unless specifically instructed
-5. In the original file, replace extracted content or add a link to the new file using title format `[[New File Title]]`
-6. For links with daily notes:
+3. **Implement mutual links** (highest priority):
+   - New file: Add links to source file and related files
+   - Source file: Add links to the new file
+   - Related files: Add links to the new file
+4. Do NOT populate the file with detailed content unless explicitly requested
+5. Do NOT add sections, headings, or content structure beyond the basics unless specifically instructed
+6. In the original file, replace extracted content or add a link to the new file using title format `[[New File Title]]`
+7. For links with daily notes:
    - Add the daily note link in the new file's `## Links` section
    - Add the new file link to the relevant task or section in the daily note
-7. NEVER create fictional content - only extract actual content from existing sources
+8. NEVER create fictional content - only extract actual content from existing sources
 
 ## Subdirectory CLAUDE.md Files
 

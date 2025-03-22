@@ -2,6 +2,7 @@
 
 ## Links
 - [[2025-03-19]]
+- [[haskell_exploration]]
 
 ## 概要
 Haskell プログラミング言語の学習ノート
