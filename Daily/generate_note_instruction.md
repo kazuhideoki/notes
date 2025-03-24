@@ -1,6 +1,6 @@
 # 当日のノートを作成するための指示
 
-1. 基本フォーマットは [[format]] に従ってください。
+1. 基本フォーマットは [[dainy_note_format]] に従ってください。
 1. ノートのファイル名は「YYYY-MM-DD.md」(今日の日付)
 1. 前日のノート ( "$HOME/Library/Mobile Documents/iCloud~co~fluder~fsnotes/Documents/Daily" に存在する) から、新しい今日のノートを作成してください。
 1. 前日のノートがない時は、最新のノートを参照してください。

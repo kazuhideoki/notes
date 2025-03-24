@@ -7,6 +7,8 @@
 ## 概要
 Haskell プログラミング言語の学習ノート
 
+---
+
 ## MEMO
 
 標準入力を受け取る
@@ -26,6 +28,8 @@ let numbers1 = map read (words line1) :: [Int]
 init (tail chars) -- 先頭と末尾を除いた中間部分
 ```
 
+---
+
 `putStrLn` 文字列を出力。print だとダブルクォートもついてしまう
 ```
 putStrLn result
@@ -40,6 +44,8 @@ all (== "=") middle
 ```haskell
 let intList = map read (words line) :: [Int]
 ```
+
+---
 
 `fromEnum` 真偽値を 0/1 の整数に変換
 ```
@@ -57,6 +63,8 @@ let (before, rest) = splitAt i xs
 ```haskell
 after = drop 2 rest
 ```
+
+---
 
 `findIndex`
 `elemIndex`
