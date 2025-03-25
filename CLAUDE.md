@@ -39,6 +39,8 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 
 - External links: Use standard Markdown links `[text](url)`
 - Internal links: Markdown links `[[File Title]]` without heading
+  - Always use the actual file title (first level 1 header) for internal links, not the filename
+  - Example: Use `[[File Title]]` not `[[file_name]]`
 - References: Use footnotes with `[^1]` syntax
 
 ### Mutual Link System - CRITICAL
