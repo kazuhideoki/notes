@@ -9,7 +9,9 @@
 
 生成AI社内コンペの発表用スライド動画を作成するためのノート
 
-スライド https://yourstand-ev.slack.com/archives/C07E024TUGN/p1742884649807629?thread_ts=1742530686.355999&cid=C07E024TUGN
+スライド: https://yourstand-ev.slack.com/archives/C07E024TUGN/p1742884649807629?thread_ts=1742530686.355999&cid=C07E024TUGN
+
+最終生成物: https://yourstand-ev.slack.com/archives/C07E024TUGN/p1742946519872579?thread_ts=1742946504.787289&cid=C07E024TUGN
 
 ## スピーカーノート
 
@@ -50,78 +52,6 @@ AIの導入で、お客様対応が格段に速くなり、満足度もアップ
 ※ちなみに、このスライドの文章や画像、スピーチ内容から音声まで、すべてChatGPTが作成しています。ちょっと盛りすぎちゃってるかもしれませんが、そこはご愛嬌ということで
 ```
 
-## スクリプト(未検証)
+## スクリプト
 
-```python
-import os
-import subprocess
-from moviepy.editor import ImageClip, AudioFileClip, concatenate_videoclips
-
-def convert_pptx_to_images(pptx_path, output_dir):
-    """
-    LibreOffice を使って pptx を PNG 画像に変換する関数。
-    LibreOffice がインストールされていることが必要です。
-    """
-    cmd = [
-        "soffice", "--headless", "--convert-to", "png",
-        pptx_path, "--outdir", output_dir
-    ]
-    subprocess.run(cmd, check=True)
-    print(f"変換完了: {pptx_path} -> {output_dir}")
-
-def create_video_from_slides_and_audio(slides_dir, audio_dir, output_video_path):
-    """
-    画像ディレクトリと音声ディレクトリから、各スライドと対応する音声で動画を作成する関数。
-    """
-    # スライド画像のファイル名をソートして取得（例: Slide1.png, Slide2.png, ...）
-    slide_images = sorted([
-        os.path.join(slides_dir, f)
-        for f in os.listdir(slides_dir) if f.lower().endswith(".png")
-    ])
-    
-    clips = []
-    for idx, slide_image in enumerate(slide_images, start=1):
-        # 各スライドに対応する音声ファイル (例: slide1.mp3)
-        audio_file = os.path.join(audio_dir, f"slide{idx}.mp3")
-        if not os.path.exists(audio_file):
-            print(f"警告: {audio_file} が見つかりません。スライド {idx} はスキップします。")
-            continue
-        # 音声ファイルを読み込み
-        audio_clip = AudioFileClip(audio_file)
-        duration = audio_clip.duration
-        
-        # 画像クリップを作成し、音声をセット。画像の表示時間は音声の長さに合わせる
-        img_clip = ImageClip(slide_image).set_duration(duration)
-        img_clip = img_clip.set_audio(audio_clip)
-        clips.append(img_clip)
-        print(f"スライド {idx} のクリップを作成しました。")
-    
-    if not clips:
-        print("動画に追加するクリップがありません。")
-        return
-    
-    # 全てのクリップを連結して最終的な動画を作成
-    final_clip = concatenate_videoclips(clips, method="compose")
-    final_clip.write_videofile(output_video_path, fps=1)
-    print(f"動画の作成が完了しました: {output_video_path}")
-
-def main():
-    # 入力ファイルと出力ディレクトリのパスを設定
-    pptx_path = "presentation.pptx"  # 入力するpptxファイル
-    output_dir = "slides"            # pptxから出力されるスライド画像のディレクトリ
-    audio_dir = "audios"             # 音声ファイルが入っているディレクトリ
-    output_video_path = "output_video.mp4"  # 出力する動画ファイルの名前
-    
-    # 出力ディレクトリが存在しない場合は作成
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    
-    # pptx を画像に変換
-    convert_pptx_to_images(pptx_path, output_dir)
-    
-    # 画像と音声を組み合わせて動画を作成
-    create_video_from_slides_and_audio(output_dir, audio_dir, output_video_path)
-
-if __name__ == "__main__":
-    main()
-```
+~/dotfiles/scripts/pptx_to_video/pptx_to_video.py
