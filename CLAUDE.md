@@ -108,15 +108,21 @@ Only larger and more complex directories (Daily/ and Yourstand/) possibly have t
 
 ### IMPORTANT: Directory-Specific Operations
 
-- When creating, editing, or processing files (like Daily/ or Yourstand/ directories):
+- ⚠️ CRITICAL STEP: BEFORE performing ANY operations in a specific directory:
 
-  1. ALWAYS first check the directory's CLAUDE.md file (e.g., `/Daily/CLAUDE.md` or `/Yourstand/CLAUDE.md`)
-  2. Follow the directory-specific formats, templates, and workflows defined in that file
-  3. Only after understanding the specific requirements should you proceed with operations
+  1. **MANDATORY**: Check if a CLAUDE.md file exists in that directory
+     - `View` the directory's CLAUDE.md file first (e.g., `/Daily/CLAUDE.md` or `/Yourstand/CLAUDE.md`)
+     - This is the FIRST operation you must perform before any file operation
+     - This step CANNOT be skipped under any circumstances
+  
+  2. **READ AND UNDERSTAND** the directory-specific guidelines completely
 
-- Examples:
-  - For 1on1 meeting notes in Yourstand/1on1/, check Yourstand/CLAUDE.md for proper file naming format (YYYY-MM-DD*1on1*{Name}.md) and required content structure
-  - For Daily notes, consult Daily/CLAUDE.md for the correct template and task formatting
+  3. Only AFTER fully understanding the specific requirements should you proceed with operations
+
+- This step is especially crucial for:
+  - Daily/ directory - has special templates and formatting rules
+  - Yourstand/ directory - contains subdirectories with specialized formats (Backlog tasks, 1on1 notes, etc.)
+  - Any directory that contains its own CLAUDE.md file
 
 ### Standard Format for Subdirectory CLAUDE.md Files
 

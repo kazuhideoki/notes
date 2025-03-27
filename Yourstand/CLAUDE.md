@@ -75,9 +75,11 @@ When creating a new 1on1 meeting note:
 
 https://yourstand.backlog.com/view/PDM_S-XXXX
 
-## メモ
+## 課題内容
 
-Backlog課題の内容
+(Paste the actual Backlog task content here. This content should be retrieved (and summarized if needed) from Backlog. Surround the content with code blocks above and below)
+
+## メモ
 ```
 
 ### Backlog Directory
@@ -87,12 +89,12 @@ Notes related to Backlog tasks. Keywords: `Backlog`, `課題`, `課題管理`, `
 #### Content Guidelines
 
 - File naming format: `{Task Key}.md` (e.g., `PDM_S-1234.md`)
-- Title format: `{Task Name}` mostly in Japanese
+- Title format: `{Task Name}` mostly in Japanese, matching the Backlog issue summary
 - Follow standard linking conventions as defined in the master CLAUDE.md
 - Add `## Backlog Link` heading followed by a blank line and the URL of the backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
 - Always add a `## メモ` heading before the task notes content
 - When a Backlog task is mentioned in a daily note, add a link to the Backlog file at the end of the task (example: `- [ ] Task description [[PDM_S-1234]]`)
-- When creating an initial file, request information about that task from the Backlog MCP Server and reflect this information in the file
+- ⚠️ **CRITICAL REQUIREMENT** When creating an initial file, request information about that task from the Backlog MCP Server and reflect this information in the file
 
 #### Editing process
 
