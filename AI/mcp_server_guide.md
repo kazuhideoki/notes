@@ -8,6 +8,7 @@
 [[2025-03-08]]
 [[2025-03-10]]
 [[2025-03-13]]
+[[2025-03-28]]
 
 ## 自作方法
 
@@ -56,3 +57,21 @@ claude mcp add postgres-server docker -- \
 
 ### 残タスク
 
+- [ ] 共通 MCP サーバー連携設定 -> ルートでやるイメージ
+- [ ] backlog改善→ MCPの作り方に合っているか？
+
+#### 個別MCPサーバー対応
+
+- [ ] Slack
+- [ ] Google drive
+- [ ] カレンダー（Google/Apple）
+- [ ] GitHub Action
+- [ ] Gmail
+- [ ] Quick chart（グラフ作成）
+
+自作
+
+- [ ] 最近のアクティビティを取得とか（any log+ FSNote からとればいいか？）
+- [ ] GCP Logging -> gcloud でできた
+- [ ] Datadog
+- [ ] 
