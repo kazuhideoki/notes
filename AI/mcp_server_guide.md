@@ -74,4 +74,3 @@ claude mcp add postgres-server docker -- \
 - [ ] 最近のアクティビティを取得とか（any log+ FSNote からとればいいか？）
 - [ ] GCP Logging -> gcloud でできた
 - [ ] Datadog
-- [ ] 
