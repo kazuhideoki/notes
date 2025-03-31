@@ -62,16 +62,17 @@ claude mcp add postgres-server docker -- \
 
 #### 個別MCPサーバー対応
 
-- [ ] Slack
-- [ ] Google drive
-- [ ] カレンダー（Google/Apple）
+- [ ] Slack -> Slack App が必要
+- [ ] Google drive -> これも OAuth が必要
+- [ ] カレンダー（Google/Apple）-> GCP でアプリか何か作成する必要がある(calendar-notice みたいな)
 - [ ] GitHub Action
-- [ ] Gmail
+- [ ] Gmail -> OAuth GCP でアプリか何か作成する必要がある
 - [ ] Quick chart（グラフ作成）
 
 自作
 
 - [ ] 最近のアクティビティを取得とか（any log+ FSNote からとればいいか？）
 - [ ] GCP Logging -> gcloud でできた
-- [ ] Datadog
+	- gcloud logging read 仕様 https://cloud.google.com/sdk/gcloud/reference/logging/read
+![](i/cb17f758-6141-4a70-a8fb-c8c1fdeff1d7.jpg) Datadog
 - [ ] 画像解析 -> 既存サービスと連携して解析する MCP Server

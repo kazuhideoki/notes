@@ -50,6 +50,7 @@ Mutual linking is the foundation of knowledge management and **must be implement
 #### Mutual Link Basic Principles
 
 1. **All non-daily files must maintain mutual links**:
+
    - All files must have a `## Links` section directly below the title
    - List related files as bullet points
    - Establish bidirectional links with all referenced files
@@ -87,7 +88,7 @@ When creating a new file or extracting content to a separate file:
 
 1. Create the new file with appropriate name in the correct directory
 2. Add minimal structure including:
-   - Title (level 1 header matching the filename) 
+   - Title (level 1 header matching the filename)
    - **REQUIRED**: A `## Links` section with references to related files
    - A minimal content section (e.g., `## 内容` or `## 概要`) with a brief one-line description
 3. **Implement mutual links** (highest priority):
@@ -111,10 +112,11 @@ Only larger and more complex directories (Daily/ and Yourstand/) possibly have t
 - ⚠️ CRITICAL STEP: BEFORE performing ANY operations in a specific directory:
 
   1. **MANDATORY**: Check if a CLAUDE.md file exists in that directory
+
      - `View` the directory's CLAUDE.md file first (e.g., `/Daily/CLAUDE.md` or `/Yourstand/CLAUDE.md`)
      - This is the FIRST operation you must perform before any file operation
      - This step CANNOT be skipped under any circumstances
-  
+
   2. **READ AND UNDERSTAND** the directory-specific guidelines completely
 
   3. Only AFTER fully understanding the specific requirements should you proceed with operations
@@ -137,12 +139,14 @@ Only larger and more complex directories (Daily/ and Yourstand/) possibly have t
 
 ## File Naming Conventions
 
+- Basically file name is in English
 - File naming rules specific to this directory
 - Title formatting conventions
 - Any directory-specific naming requirements
 
 ## Content Guidelines
 
+- Basically content is in Japanese
 - Content expectations for this directory
 - Required sections or elements
 - Directory-specific formatting rules
