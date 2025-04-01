@@ -43,7 +43,7 @@ Claude Code で利用可能なスラッシュコマンドの検討案
 	- [x] - openai.fm でテキストから音声ファイル作る https://platform.openai.com/docs/guides/text-to-speech?lang=curl
 	- [ ] - openai で画像を生成させる (🔶 4o の新しい画像生成APIはまだない4/26 `Developers will soon be able to generate images with GPT‑4o via the API, with access rolling out in the next few weeks.` )
 	- [ ] - pptx(pdf) と音声ファイルを合成してスライド動画を作成する
-- MCP Server
+- MCP Serverqw
 	- メディア関連を扱うので良いか？
 - 普通にエージェントで行う -> **作成/編集する時。指示しながらやらせる**
 	- MCPでラップしたスクリプトを呼ぶことが可能
