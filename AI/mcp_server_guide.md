@@ -68,6 +68,7 @@ claude mcp add postgres-server docker -- \
 - [ ] GitHub Action
 - [ ] Gmail -> OAuth GCP でアプリか何か作成する必要がある
 - [ ] Quick chart（グラフ作成）
+- [ ] メモリーバンク（あったっけ？）
 
 自作
 
