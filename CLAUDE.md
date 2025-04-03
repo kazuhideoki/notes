@@ -5,7 +5,10 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 ## Directory Structure
 
 - `AI/` - AI-related tools, notes, and resources
-- `Daily/` - Daily notes in YYYY-MM-DD.md format
+- `Daily/` - Daily notes organized hierarchically
+  - `{year}/` - Year folders (e.g., `2025/`)
+    - `{month}/` - Month folders (e.g., `04/`)
+      - `YYYY-MM-DD.md` - Daily note files
 - `Idea/` - Ideas and concept documents
 - `Learning/` - Learning materials, technical notes, and references
 - `Programming/` - Programming-related notes and articles
@@ -20,7 +23,7 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 
 ### File and Directory Naming
 
-- Daily notes format: `YYYY-MM-DD.md` in Daily/ directory
+- Daily notes format: `YYYY-MM-DD.md` in `Daily/{year}/{month}/` directory structure
 - Other filenames should use snake_case with alphabetic characters
 - Directory names should use PascalCase
 - Files created via the FSNotes app use the filename format `YYYYMMDDHHmmSS`

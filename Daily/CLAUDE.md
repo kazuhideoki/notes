@@ -4,9 +4,9 @@ Directory for daily notes and activity records.
 
 ## Directory Structure
 
-- Flat structure of daily note files
+- Hierarchical structure: `Daily/{year}/{month}/YYYY-MM-DD.md`
 - Related files stored in `files/` subdirectory if needed
-- Images stored in `i/` subdirectory
+- Images stored in `Daily/{year}/{month}/i/` subdirectory to keep images within their respective directories
 
 ## File Naming Conventions
 
@@ -55,3 +55,9 @@ Directory for daily notes and activity records.
 - [ ] Task 1
 - [ ] Task 2 [[Related File]]
 ```
+
+## Note on Linking Between Daily Notes
+
+- When linking to other daily notes, ensure paths are correct considering the new directory structure
+- Yesterday/Tomorrow links should use the full path if needed: `[[/{year}/{month}/YYYY-MM-DD]]`
+- When crossing month or year boundaries, ensure links point to the correct subdirectory
