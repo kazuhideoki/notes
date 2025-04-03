@@ -1,23 +1,21 @@
+## Format
+
+```
 # YYYY-MM-DD
 
 [[YYYY-MM-DD]] [[YYYY-MM-DD]]
 
 ## 本日のタスク
 
-- [ ] タスク1
-- [ ] タスク2
-- [ ] タスク3
-
 ## 明日のタスク
-
-- [ ] タスク1
-- [ ] タスク2
-- [ ] タスク3
 
 ## 積み上げタスク
 
-- [ ] タスク1
-- [ ] タスク2
-- [ ] タスク3
-
 ## メモ
+
+```
+
+## Memo
+
+- `[[YYYY-MM-DD]] [[YYYY-MM-DD]]` represents the previous day and the next day
+- For each item, the content should be listed with checkboxes

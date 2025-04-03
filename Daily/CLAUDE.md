@@ -34,27 +34,7 @@ Directory for daily notes and activity records.
 
 ## File Templates
 
-```markdown
-# YYYY-MM-DD
-
-[[Yesterday]] [[Tomorrow]] // YYYY-MM-DD for each day
-
-## 本日のタスク
-
-- [ ] Task 1
-- [ ] Task 2 [[Related File]]
-
-## 明日のタスク
-
-- [ ] Work task 1
-- [ ] Work task 2 [[PDM_S-XXXX]]
-- [ ] Meeting with team [[YYYY-MM-DD_1on1_Name]]
-
-## 積み上げタスク
-
-- [ ] Task 1
-- [ ] Task 2 [[Related File]]
-```
+refer to `Daily/daily_note_format.md`
 
 ## Note on Linking Between Daily Notes
 
