@@ -63,10 +63,13 @@ claude mcp add postgres-server docker -- \
 #### 個別MCPサーバー対応
 
 - [x] Slack -> Slack App が必要
-- [ ] Google drive -> これも OAuth が必要
-- [ ] カレンダー（Google/Apple）-> GCP でアプリか何か作成する必要がある(calendar-notice みたいな)
+	- [ ] よく使うチャンネルIDは登録しておく -> チャンネル一覧などの検索をスキップしてトークン節約に寄与 -> home がいいか？
+- [x] Google drive -> これも OAuth が必要
+	- [x] 🔶 src/gdrive/README.md を見てやったが、接続できない。取得したクレデンシャルで curl したらうまくいった。
+- [x] カレンダー（Google/Apple）-> GCP でアプリか何か作成する必要がある(calendar-notice みたいな)
 - [ ] GitHub Action
 - [ ] Gmail -> OAuth GCP でアプリか何か作成する必要がある
+- [x] Apple -> あまり使えなかった
 - [ ] Quick chart（グラフ作成）
 - [ ] メモリーバンク（あったっけ？）
 
