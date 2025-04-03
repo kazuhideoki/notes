@@ -62,7 +62,7 @@ claude mcp add postgres-server docker -- \
 
 #### 個別MCPサーバー対応
 
-- [ ] Slack -> Slack App が必要
+- [x] Slack -> Slack App が必要
 - [ ] Google drive -> これも OAuth が必要
 - [ ] カレンダー（Google/Apple）-> GCP でアプリか何か作成する必要がある(calendar-notice みたいな)
 - [ ] GitHub Action
