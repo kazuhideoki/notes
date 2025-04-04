@@ -1,12 +1,9 @@
 # Claude Code スラッシュコマンド案
 
-## Links
+## Meta
 
-[[AIツールまとめ]] 
-[[2025-03-25]]
-[[2025-03-26]]
-[[OpenAI Text to Speech]]
-[[Marp を試す]]
+[[AIツールまとめ]] [[2025-03-25]] [[2025-03-26]] [[OpenAI Text to Speech]] [[Marp を試す]]
+#ai
 
 ## 概要
 

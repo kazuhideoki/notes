@@ -7,10 +7,10 @@ theme: yourstand
 
 ![bg right:50% contain](i/7a65f1fc-cb53-42f7-b26f-ac914a4dac03.jpg)
 
-## Links
+## Meta
 
-- [[2025-03-19]]
-- [[haskell_exploration]]
+[[2025-03-19]] [[haskell_exploration]]
+#learning
 
 ## 概要
 

@@ -1,8 +1,9 @@
 # Programming Articles
 
-## Links
+## Meta
 
-- [[2025-03-11]]
+[[2025-03-11]]
+#programming
 
 ## コードを依存グラフで理解する 「読みやすいコード」を依存グラフで考える
 

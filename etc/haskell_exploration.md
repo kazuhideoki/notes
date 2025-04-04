@@ -1,9 +1,9 @@
 # Haskell で何か試せそうなことはないか？
 
-## Links
+## Meta
 
-- [[haskell_learning]]
-- [[2025-03-23]]
+[[haskell_learning]] [[2025-03-23]]
+#programming
 
 ## 概要
 

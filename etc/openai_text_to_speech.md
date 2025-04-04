@@ -1,9 +1,9 @@
 # OpenAI Text to Speech
 
-## Links
+## Meta
 
-- [[2025-03-25]]
-- [[Claude Code スラッシュコマンド案]]
+[[2025-03-25]] [[Claude Code スラッシュコマンド案]]
+#programming
 
 ## 概要
 

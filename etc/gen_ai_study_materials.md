@@ -1,9 +1,9 @@
 # 生成AI勉強会の資料作り
 
-## Links
+## Meta
 
-- [[gen_ai]]
-- [[ai_tool]]
+[[gen_ai]] [[ai_tool]]
+#ai
 
 ## 概要
 
