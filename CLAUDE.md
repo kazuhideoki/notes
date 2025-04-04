@@ -2,7 +2,9 @@
 
 This is the master CLAUDE.md file containing common guidelines. Only major directories (Daily/ and Yourstand/) have their own CLAUDE.md files with specific guidelines for that directory's content.
 
-## Directory Structure
+## Directory & Files
+
+### Directory Structure
 
 - `AI/` - AI-related tools, notes, and resources
 - `Daily/` - Daily notes organized hierarchically
@@ -19,8 +21,6 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 - `etc/` - Miscellaneous files
 - `fsnote/` - FSNotes app operation information
 
-## Common Formatting Guidelines
-
 ### File and Directory Naming
 
 - Daily notes format: `YYYY-MM-DD.md` in `Daily/{year}/{month}/` directory structure
@@ -29,7 +29,11 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 - Files created via the FSNotes app use the filename format `YYYYMMDDHHmmSS`
 - Store images in `i/` subdirectories
 
-### Document Structure
+## Tags
+
+WIP
+
+## Document Structure
 
 - Use Markdown with appropriate headers and task lists `- [ ]`
 - For nesting in bullet points, use tabs instead of spaces

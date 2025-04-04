@@ -1,12 +1,9 @@
 # FSNotes 運用改善
 
-## Links
+## Meta
 
-- [[2025-04-05]]
-
-## Tags
-
-#fsnotes #category
+[[2025-04-05]] [[情報活用とノート管理の方針]]
+#fsnotes #category #idea
 
 ## 概要
 
