@@ -52,7 +52,7 @@ claude mcp add postgres-server docker -- \
 
 ### 残タスク
 
-- [ ] 共通 MCP サーバー連携設定 -> ルートでやるイメージ
+- [ ] 共通 MCP サーバー連携設定 -> .mcp.json
 - [ ] backlog改善→ MCPの作り方に合っているか？
 
 #### 個別MCPサーバー対応
@@ -67,6 +67,7 @@ claude mcp add postgres-server docker -- \
 - [x] Apple -> あまり使えなかった
 - [ ] Quick chart（グラフ作成）
 - [ ] メモリーバンク（あったっけ？）
+- [ ] GitHub公式MCPサーバー
 
 自作
 
@@ -75,3 +76,58 @@ claude mcp add postgres-server docker -- \
 	- gcloud logging read 仕様 https://cloud.google.com/sdk/gcloud/reference/logging/read
 ![](i/cb17f758-6141-4a70-a8fb-c8c1fdeff1d7.jpg) Datadog
 - [ ] 画像解析 -> 既存サービスと連携して解析する MCP Server
+
+## .mcp.json
+
+```
+
+{
+  "mcpServers": {
+    "brave_search": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "BRAVE_API_KEY=BSAkTGSrV4eBMCfRIWRShDjOGd0s2o0",
+        "mcp/brave-search"
+      ]
+    },
+    "backlog": {
+      "command": "node",
+      "args": [
+        "/Users/kazuhideoki/mcp-server-backlog/dist/index.js",
+        "--permission",
+        "MUTATE"
+      ]
+    },
+    "fetch": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "mcp/fetch"]
+    },
+    "slack": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SLACK_BOT_TOKEN=xoxb-hoge",
+        "-e",
+        "SLACK_TEAM_ID=TT4HAERQR",
+        "mcp/slack"
+      ]
+    },
+    "gcal": {
+      "command": "node",
+      "args": ["/Users/kazuhideoki/google-calendar-mcp/build/index.js"]
+    },
+    "gdrive": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-gdrive"]
+    }
+  }
+}
+
+```
