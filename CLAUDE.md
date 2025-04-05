@@ -2,24 +2,25 @@
 
 This is the master CLAUDE.md file containing common guidelines. Only major directories (Daily/ and Yourstand/) have their own CLAUDE.md files with specific guidelines for that directory's content.
 
+## Words
+
+- All `note(ノート)` `document(ドキュメント)` `file(ファイル)` means a file that contains information or data.
+- `link(リンク)` always refers to a mutual link. A mutual link indicates that the target file also links back to the source file.
+
 ## Directory & Files
 
 ### Directory Structure
 
-- `AI/` - AI-related tools, notes, and resources
 - `Daily/` - Daily notes organized hierarchically
   - `{year}/` - Year folders (e.g., `2025/`)
     - `{month}/` - Month folders (e.g., `04/`)
       - `YYYY-MM-DD.md` - Daily note files
-- `Idea/` - Ideas and concept documents
-- `Learning/` - Learning materials, technical notes, and references
-- `Programming/` - Programming-related notes and articles
+- `etc/` - Miscellaneous files, including AI-related content and idea documents
+  - `i/` - Images for etc/ files
 - `Yourstand/` - Work-related notes for Yourstand
   - `1on1/` - One-on-one meeting notes
   - `Backlog/` - Backlog task notes
   - `Recruitment/` - Recruitment-related notes
-- `etc/` - Miscellaneous files
-- `fsnote/` - FSNotes app operation information
 
 ### File and Directory Naming
 
@@ -31,7 +32,9 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 
 ## Tags
 
-WIP
+### Commonly Used Tags
+
+#category #fsnotes #idea #ai #learning #programming
 
 ## Document Structure
 
@@ -50,31 +53,39 @@ WIP
   - Example: Use `[[File Title]]` not `[[file_name]]`
 - References: Use footnotes with `[^1]` syntax
 
-### Mutual Link System - CRITICAL
+### Meta Section Format
 
-Mutual linking is the foundation of knowledge management and **must be implemented**.
+Non-daily files should use a standardized meta section for organizing metadata:
 
-#### Mutual Link Basic Principles
+1. **Every non-daily file must have a `## Meta` section directly below the title**
+2. **Content of the Meta section:**
 
-1. **All non-daily files must maintain mutual links**:
+   - Links to related files in inline format: `[[File A]] [[File B]] [[File C]]`
+   - Tags with # prefix: `#tag1 #tag2 #tag3`
+   - All links should be on a single line, not as bullet points
+   - All tags should be on a separate line after the links
 
-   - All files must have a `## Links` section directly below the title
-   - List related files as bullet points
-   - Establish bidirectional links with all referenced files
+3. **Example Meta section:**
 
-2. **Link format**: Internal links must use the `[[File Title]]` format (without headings)
+   ```markdown
+   ## Meta
 
-3. **Special rule for daily notes**:
-   - Daily notes do NOT have a separate `## Links` section
-   - Instead, add internal links directly within relevant task items
+   [[Related File 1]] [[Related File 2]] [[Daily Note]]
+   #tag1 #tag2
+   ```
+
+### Special rule for daily notes:
+
+- Daily notes do NOT have a separate `## Meta` section
+- Instead, add internal links directly within relevant task items
 
 #### Mutual Link Procedure for New Files
 
 When creating a new file, always:
 
-1. New file side: Add links to the source file in the `## Links` section
-2. Source file side: Add links to the new file (in task items for daily notes, in the `## Links` section for other files)
-3. Related file side: Add links to the new file in the `## Links` section of any other related files
+1. New file side: Add links to the source file in the `## Meta` section
+2. Source file side: Add links to the new file (in task items for daily notes, in the `## Meta` section for other files)
+3. Related file side: Add links to the new file in the `## Meta` section of any other related files
 
 ## Git Workflow
 
@@ -96,19 +107,20 @@ When creating a new file or extracting content to a separate file:
 1. Create the new file with appropriate name in the correct directory
 2. Add minimal structure including:
    - Title (level 1 header matching the filename)
-   - **REQUIRED**: A `## Links` section with references to related files
+   - **REQUIRED**: A `## Meta` section with references to related files and appropriate tags
    - A minimal content section (e.g., `## 内容` or `## 概要`) with a brief one-line description
 3. **Implement mutual links** (highest priority):
-   - New file: Add links to source file and related files
+   - New file: Add links to source file and related files in the Meta section
    - Source file: Add links to the new file
    - Related files: Add links to the new file
 4. Do NOT populate the file with detailed content unless explicitly requested
 5. Do NOT add sections, headings, or content structure beyond the basics unless specifically instructed
 6. In the original file, replace extracted content or add a link to the new file using title format `[[New File Title]]`
 7. For links with daily notes:
-   - Add the daily note link in the new file's `## Links` section
+   - Add the daily note link in the new file's `## Meta` section
    - Add the new file link to the relevant task or section in the daily note
-8. NEVER create fictional content - only extract actual content from existing sources
+8. When adding tags, select one or more relevant tags from the `## Tags` section of this document (for example, use `#ai` for AI-related content) and include them in the `## Meta` section on the line after the links
+9. NEVER create fictional content - only extract actual content from existing sources
 
 ## Subdirectory CLAUDE.md Files
 
