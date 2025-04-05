@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "brave_search": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "BRAVE_API_KEY=hoge",
+        "mcp/brave-search"
+      ]
+    },
+    "backlog": {
+      "command": "node",
+      "args": [
+        "/Users/kazuhideoki/mcp-server-backlog/dist/index.js",
+        "--permission",
+        "MUTATE"
+      ]
+    },
+    "fetch": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "mcp/fetch"]
+    },
+    "slack": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "SLACK_BOT_TOKEN=xoxb-hoge",
+        "-e",
+        "SLACK_TEAM_ID=TT4HAERQR",
+        "mcp/slack"
+      ]
+    },
+    "gcal": {
+      "command": "node",
+      "args": ["/Users/kazuhideoki/google-calendar-mcp/build/index.js"]
+    },
+    "gdrive": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-gdrive"]
+    }
+  }
+}
