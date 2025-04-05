@@ -18,7 +18,7 @@ Directory for daily notes and activity records.
 ## Content Guidelines
 
 - Use task lists with `- [ ]` for tasks, `- [x]` for completed tasks
-- For daily notes, do NOT add a separate `## Links` section
+- For daily notes, do NOT add a separate `## Meta` section
 - Instead, add internal links directly in the relevant task items
 - Backlog task management:
   - Add a link to the Backlog file at the end of the task item (example: `- [ ] Task description [[PDM_S-1234]]`)

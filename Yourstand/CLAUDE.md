@@ -15,6 +15,7 @@ Directory for work-related notes at Yourstand. Keywords: `ユアスタンド`, `
 - Specifically, filenames should use snake_case with alphabetic characters in English only
 - Title should match the file name in a readable format
 - Follow standard linking conventions as defined in the master CLAUDE.md
+- Use the Meta section format as specified in the master CLAUDE.md
 
 ## Subdirectory Guidelines
 
@@ -29,7 +30,7 @@ Directory for work-related notes at Yourstand. Keywords: `ユアスタンド`, `
 - File naming format: `YYYY-MM-DD_1on1_{Name}.md`
 - Title format: `YYYY-MM-DD 1on1 Name`
 - Follow standard linking conventions for 1on1 files and daily notes
-- Below the `## Links`, add `## Summary of Previous Meeting` with a simple summary of the previous meeting in about 3-4 bullet points
+- Below the `## Meta` section, add `## Summary of Previous Meeting` with a simple summary of the previous meeting in about 3-4 bullet points
 
 #### Editing process
 
@@ -41,7 +42,7 @@ When creating a new 1on1 meeting note:
 4. Find and read the previous meeting file to create a meaningful summary (usually 3-4 bullet points)
 5. Update today's daily note to include a link to the 1on1 meeting file
 6. Add today's date to any Backlog tasks mentioned in the daily note
-7. In the previous meeting file, add a link to the new meeting file under the ## Links section to create bidirectional linking
+7. In the previous meeting file, add a link to the new meeting file under the ## Meta section to create bidirectional linking
 
 #### File Templates
 
@@ -50,12 +51,10 @@ When creating a new 1on1 meeting note:
 ```markdown
 # YYYY-MM-DD 1on1 Name
 
-## Links
+## Meta
 
-- [[YYYY-MM-DD_1on1_Name]] (link to previous meeting)
-- (Next meeting link will be added when created)
-- [[YYYY-MM-DD]] (link to today's daily note)
-- (Other related file links)
+[[YYYY-MM-DD_1on1_Name]] [[YYYY-MM-DD]]
+# meeting #1on1
 
 ## Summary of Previous Meeting
 
@@ -67,9 +66,10 @@ When creating a new 1on1 meeting note:
 ```markdown
 # Task Title
 
-## Links
+## Meta
 
-- [[YYYY-MM-DD]]
+[[YYYY-MM-DD]]
+#backlog
 
 ## Backlog Link
 
@@ -90,7 +90,8 @@ Notes related to Backlog tasks. Keywords: `Backlog`, `課題`, `課題管理`, `
 
 - File naming format: `{Task Key}.md` (e.g., `PDM_S-1234.md`)
 - Title format: `{Task Name}` mostly in Japanese, matching the Backlog issue summary
-- Follow standard linking conventions as defined in the master CLAUDE.md
+- Follow the Meta section format as specified in the master CLAUDE.md
+- Include #backlog tag in the Meta section for all Backlog task files
 - Add `## Backlog Link` heading followed by a blank line and the URL of the backlog task page like `https://yourstand.backlog.com/view/PDM_S-1234`
 - Always add a `## メモ` heading before the task notes content
 - When a Backlog task is mentioned in a daily note, add a link to the Backlog file at the end of the task (example: `- [ ] Task description [[PDM_S-1234]]`)
@@ -102,7 +103,7 @@ Notes related to Backlog tasks. Keywords: `Backlog`, `課題`, `課題管理`, `
 2. If a Backlog link (`https://yourstand.backlog.com/view/PDM_S-XXXX`) is included in a task, recognize it as a Backlog task
 3. Create a corresponding Backlog task note under Yourstand/Backlog/ with the format `PDM_S-XXXX.md`
 4. Add links in the format `[[PDM_S-XXXX]]` to task items in all related daily notes (including the current day)
-5. Also add links to all related daily notes in the Backlog task note
+5. Also add links to all related daily notes in the Backlog task note's Meta section
 6. When necessary, create concept notes and link them bidirectionally
 
 ### Recruitment Directory

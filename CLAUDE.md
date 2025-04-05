@@ -34,7 +34,7 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 
 ### Commonly Used Tags
 
-#category #fsnotes #idea #ai #learning #programming
+#category #fsnotes #idea #ai #learning #programming #meeting #1on1 #backlog
 
 ## Document Structure
 
@@ -79,26 +79,13 @@ Non-daily files should use a standardized meta section for organizing metadata:
 - Daily notes do NOT have a separate `## Meta` section
 - Instead, add internal links directly within relevant task items
 
-#### Mutual Link Procedure for New Files
+### Mutual Link Procedure for New Files
 
 When creating a new file, always:
 
 1. New file side: Add links to the source file in the `## Meta` section
 2. Source file side: Add links to the new file (in task items for daily notes, in the `## Meta` section for other files)
 3. Related file side: Add links to the new file in the `## Meta` section of any other related files
-
-## Git Workflow
-
-- Command to view daily changes: `git diff --stat`
-- Commit message is written in Japanese.
-- Commit daily changes at end of day: `git commit -am "本日終了"`
-- Morning commit convention: `git commit -am "朝"`
-- Pre-work commit convention: `git commit -am "仕事前"`
-- Write commit messages that clearly indicate "which state/point in time" the repository was in
-- When committing, annotations like `Generated with Claude Code` in the message are unnecessary - never include these
-- Do not automatically commit or stage changes after work unless specifically instructed
-- NEVER automatically commit changes - always wait for an explicit instruction to commit
-- File creation or modification isn't enough reason to commit - only commit when directly asked
 
 ## Content Creation/Extraction Guidelines
 
@@ -121,6 +108,19 @@ When creating a new file or extracting content to a separate file:
    - Add the new file link to the relevant task or section in the daily note
 8. When adding tags, select one or more relevant tags from the `## Tags` section of this document (for example, use `#ai` for AI-related content) and include them in the `## Meta` section on the line after the links
 9. NEVER create fictional content - only extract actual content from existing sources
+
+## Git Workflow
+
+- Command to view daily changes: `git diff --stat`
+- Commit message is written in Japanese.
+- Commit daily changes at end of day: `git commit -am "本日終了"`
+- Morning commit convention: `git commit -am "朝"`
+- Pre-work commit convention: `git commit -am "仕事前"`
+- Write commit messages that clearly indicate "which state/point in time" the repository was in
+- When committing, annotations like `Generated with Claude Code` in the message are unnecessary - never include these
+- Do not automatically commit or stage changes after work unless specifically instructed
+- NEVER automatically commit changes - always wait for an explicit instruction to commit
+- File creation or modification isn't enough reason to commit - only commit when directly asked
 
 ## Subdirectory CLAUDE.md Files
 
@@ -185,9 +185,3 @@ Only larger and more complex directories (Daily/ and Yourstand/) possibly have t
 
 <Process guidelines, workflows, or other directory-specific information>
 ```
-
-## Tools
-
-- Primary editor: FSNotes (Mac, iPad, iPhone)
-- Secondary tools: Raycast, Zed
-- No specific IDE is required
