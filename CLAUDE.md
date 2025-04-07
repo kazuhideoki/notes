@@ -32,8 +32,9 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 
 ## Tags
 
-### Commonly Used Tags
+### Used Tags
 
+Only use these tags:
 #category #fsnotes #idea #ai #learning #programming #meeting #1on1 #backlog
 
 ## Document Structure
@@ -49,7 +50,7 @@ This is the master CLAUDE.md file containing common guidelines. Only major direc
 
 - External links: Use standard Markdown links `[text](url)`
 - Internal links: Markdown links `[[File Title]]` without heading
-  - Always use the actual file title (first level 1 header) for internal links, not the filename
+  - **Always use the actual file title (first level 1 header) for internal links, not the filename**
   - Example: Use `[[File Title]]` not `[[file_name]]`
 - References: Use footnotes with `[^1]` syntax
 

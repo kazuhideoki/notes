@@ -9,3 +9,33 @@
 
 非開発者がMCPサーバーと連携する環境を構築するための手順とガイドライン。
 
+## プロジェクト1 Cursor 環境構築 -> うらさん向け
+
+- [ ] Cursor ダウンロード、利用可能な状態にする
+- [ ] MCP 連携する -> json で
+- [ ] MCP の管理方法を決める
+
+## プロジェクト2 CS Claude Desktop で MCP連携
+
+### 仮説検証
+
+まず、CS の2人に Claude Code でデモンストレーションをする
+連携ツールは Logging, DB, Backlog で課題に対して調査依頼を出せるようにする
+zendesk mcp server ある https://github.com/reminia/zendesk-mcp-server
+
+- [ ] Logging の MCP サーバー作成
+- [ ] zendesk mcp server 試す https://github.com/reminia/zendesk-mcp-server
+	- [ ] メンバーに加えてもらう？
+
+
+## プロジェクト3 一般非開発者向けエージェント環境構築
+
+### ツール案
+
+- 社内ツール
+	- Slack
+	- Google Drive
+	- Google Calendar
+	- GMail(未検証、セキュリティ的に厳しいかも？)
+- ドキュメント
+	- 特定業務に関連する知識を体系的にまとめ、取得できるようにする
