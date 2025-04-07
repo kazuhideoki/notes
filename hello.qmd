@@ -1,0 +1,25 @@
+---
+title: "HaskellとD2のサンプル"
+engine: jupyter
+jupyter:
+  kernelspec:
+    display_name: "Haskell"
+    language: "haskell"
+    name: "haskell"
+filters:
+  - d2
+d2:
+  layout: elk
+  theme: "NeutralDefault"
+---
+
+## D2ダイアグラムの例
+
+```{d2}
+x -> y -> z
+```
+
+```{haskell}
+main :: IO ()
+main = putStrLn "こんにちは、Quarto！"
+````

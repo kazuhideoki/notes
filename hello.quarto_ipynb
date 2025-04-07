@@ -1,0 +1,46 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"HaskellとD2のサンプル\"\n",
+        "engine: jupyter\n",
+        "jupyter:\n",
+        "  kernelspec:\n",
+        "    display_name: \"Haskell\"\n",
+        "    language: \"haskell\"\n",
+        "    name: \"haskell\"\n",
+        "filters:\n",
+        "  - d2\n",
+        "d2:\n",
+        "  layout: elk\n",
+        "  theme: \"NeutralDefault\"\n",
+        "---\n",
+        "\n",
+        "\n",
+        "## D2ダイアグラムの例\n",
+        "\n",
+        "```{d2}\n",
+        "x -> y -> z\n",
+        "```\n",
+        "\n",
+        "\n",
+        "main :: IO ()\n",
+        "main = putStrLn \"こんにちは、Quarto！\"\n",
+        "````"
+      ],
+      "id": "55531a7d"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Haskell",
+      "language": "haskell",
+      "name": "haskell"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
