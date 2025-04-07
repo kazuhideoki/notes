@@ -19,6 +19,8 @@
 0. まず brew が入っているか？
 1. `git` `docker` `node` あたりが必要になる
 
+注: シークレットの類を保存する時は `.gitignore` に加えておく
+
 ### brave_search
 
 1. `git` と `docker` が必要

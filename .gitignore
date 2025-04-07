@@ -4,3 +4,8 @@
 .cursor/mcp.json
 
 /.quarto/
+
+# quarto
+_extensions
+index_files
+Category/**/*.html

@@ -2,7 +2,7 @@
 
 ## Meta
 
-[[2025-04-07]]
+[[2025-04-07]][[FSNotes 運用改善]]
 #ai #programming #learning
 
 ## 概要
