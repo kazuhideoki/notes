@@ -11,7 +11,7 @@
 
 ## プロジェクト1 Cursor 環境構築 -> うらさん向け
 
-[[Cursor 環境構築 (Ura-san向け)]]
+- [x] [[Cursor 環境構築 (Ura-san向け)]]
 
 ## プロジェクト2 CS Claude Desktop で MCP連携
 

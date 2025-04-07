@@ -13,9 +13,11 @@
 
 - [x] Cursor ダウンロード、利用可能な状態にする
 - [x] MCP 連携する -> json で
-- [ ] MCP の管理方法を決める
 
 ## ツール別連携まとめ
+
+0. まず brew が入っているか？
+1. `git` `docker` `node` あたりが必要になる
 
 ### brave_search
 

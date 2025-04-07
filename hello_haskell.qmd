@@ -1,0 +1,32 @@
+---
+title: "IHaskell でのレポート例"
+author: "お好みの名前"
+date: "2025-04-07"
+format: html
+jupyter: haskell
+---
+
+```{haskell}
+--| label: hello-haskell
+--| fig-cap: "IHaskell カーネルからのメッセージ"
+main :: IO ()
+main = putStrLn "Hello, IHaskell kernel from Quarto!"
+```
+
+iCloud だとエラーになる？
+```sh
+quarto preview '/Users/kazuhideoki/Library/Mobile Documents/iCloud~co~fluder~fsnotes/Documents/hello_haskell.qmd'
+ERROR: BrokenPipe: Broken pipe (os error 32)
+
+Stack trace:
+    at write (ext:deno_net/01_net.js:63:21)
+    at TcpConn.write (ext:deno_net/01_net.js:141:12)
+    at writeKernelCommand (file:///Applications/quarto/bin/quarto.js:36538:37)
+    at executeKernelKeepalive (file:///Applications/quarto/bin/quarto.js:36390:15)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Object.execute (file:///Applications/quarto/bin/quarto.js:40238:17)
+    at async renderExecute (file:///Applications/quarto/bin/quarto.js:85567:27)
+    at async renderFileInternal (file:///Applications/quarto/bin/quarto.js:85735:43)
+    at async renderFiles (file:///Applications/quarto/bin/quarto.js:85603:17)
+    at async render (file:///Applications/quarto/bin/quarto.js:90505:21)
+```

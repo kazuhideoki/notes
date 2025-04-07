@@ -1,0 +1,9 @@
+// Static tasks configuration.
+// https://zed.dev/docs/tasks
+// Example:
+[
+  {
+    "label": "quarto preview",
+    "command": "quarto preview '$ZED_FILE'"
+  }
+]
