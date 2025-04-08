@@ -9,3 +9,4 @@
 _extensions
 index_files
 Category/**/*.html
+Category/*_files

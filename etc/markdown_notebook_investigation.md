@@ -46,16 +46,26 @@ Rを起動して以下を実行
 install.packages(c("knitr", "rmarkdown"))
 ```
 
-記述
+---
+サンプル -> /Users/kazuhideoki/dotfiles/hello_haskell.qmd
+以下 qmd の記述
 ```
 ---
 title: "Haskell のサンプル"
-format: html
+format:
+  html:
+    highlight-style: github
 engine: knitr
+filters:
+  - d2
+d2:
+  layout: elk
+  theme: "NeutralDefault"
 ---
 
-```{r setup, include=FALSE}
+## たのしい！ Quarto
 
+```{r setup, include=FALSE}
 knitr::knit_engines$set(ghc = function(options) {
   code <- paste(options$code, collapse = '\n')
   f <- tempfile(fileext = ".hs")
@@ -63,7 +73,49 @@ knitr::knit_engines$set(ghc = function(options) {
   out <- system2('runhaskell', f, stdout = TRUE)
   knitr::engine_output(options, code, out)
 })
-
 ```
 
-サンプル -> /Users/kazuhideoki/dotfiles/hello_haskell.qmd
+```{r}
+#| echo: false
+#| engine: ghc
+main :: IO ()
+main = putStrLn ("Hello, Haskell from Quarto!" ++ fuga)
+
+fuga = "fuga"
+```
+
+## 外部Haskellファイル
+
+```{r}
+#| echo: false
+#| results: asis
+haskell_file <- "external.hs"
+
+# ファイルの内容を読み込む
+file_content <- readLines(haskell_file)
+
+# ファイルの内容をMarkdown形式で出力
+output <- c("```haskell", file_content, "```")
+knitr::asis_output(paste(output, collapse = "\n"))
+```
+
+## 実行結果
+
+```{r}
+#| echo: false
+# 外部Haskellファイルのパスを指定
+haskell_file <- "external.hs"
+
+# 外部Haskellファイルを実行して結果を取得
+result <- system2('runhaskell', haskell_file, stdout = TRUE)
+
+# 結果を表示
+cat(result, sep = "\n")
+```
+
+```{.d2}
+direction: right
+x -> y -> z
+```
+
+---
