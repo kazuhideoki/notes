@@ -21,7 +21,7 @@
 連携ツールは Logging, DB, Backlog で課題に対して調査依頼を出せるようにする
 zendesk mcp server ある https://github.com/reminia/zendesk-mcp-server
 
-- [ ] Logging の MCP サーバー作成
+- [x] Logging の MCP サーバー作成
 - [ ] zendesk mcp server 試す https://github.com/reminia/zendesk-mcp-server
 	- [ ] メンバーに加えてもらう？
 
