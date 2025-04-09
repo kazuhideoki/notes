@@ -35,6 +35,7 @@ theme: yourstand
 	- `headingDivider: 2` とかで 任意の headingでページングできる
 - CSS
 	- 個別ページでの設定は `_class` で指定
+- 含めないようにするには？
 
 ```
 <!-- _class: divider -->
