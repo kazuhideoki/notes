@@ -17,6 +17,18 @@ Marp を試す
 	- [ ] 画像ダンロードを claude でできるようにする -> 現在 python ファイル `/Users/kazuhideoki/dotfiles/marp/images/download_image.py` がある。これを汎用化してスラッシュコマンドでやりたい
 - [ ] Claude Code で スラッシュコマンドと組み合わせて作る
 
+## 出力
+
+watch モードで html
+```sh
+npx @marp-team/marp-cli@latest -w $ZED_FILE -o $ZED_DIRNAME/$ZED_STEM.html --theme-set /Users/kazuhideoki/dotfiles/marp/css/yourstand.html
+```
+
+pptx
+```sh
+npx @marp-team/marp-cli@latest $ZED_FILE -o $ZED_DIRNAME/$ZED_STEM.html --theme-set /Users/kazuhideoki/dotfiles/marp/css/yourstand.pptx
+```
+
 ## ノート
 
 - まず Marp を有効にする
@@ -35,7 +47,7 @@ theme: yourstand
 	- `headingDivider: 2` とかで 任意の headingでページングできる
 - CSS
 	- 個別ページでの設定は `_class` で指定
-- 含めないようにするには？
+- 含めないようにするには **コメントアウトしかないみたい**
 
 ```
 <!-- _class: divider -->
