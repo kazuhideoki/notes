@@ -1,0 +1,46 @@
+user: {
+  shape: person
+  label: ユーザー
+}
+
+pc: {
+  a: {
+    label: エージェント
+    description: ChatGPT/Claude
+  }
+  mcp: {
+    log: {
+      label: ログ解析サーバー
+    }
+    db: {
+      label: DBアクセスサーバー
+    }
+  }
+}
+
+gcp: {
+  logging: {
+    label: Google ロギング
+  }
+  db: {
+    label: データベース
+  }
+}
+
+user -> pc.a: {
+  label: 尋ねる
+}
+pc.a -> pc.mcp.ゼンデスク
+pc.a -> pc.mcp.Slack : 過去の投稿を調べる
+pc.a -> pc.mcp.log: {
+  label: クエリリクエスト
+}
+pc.mcp.log -> gcp.logging: {
+  label: ログクエリ実行
+}
+pc.a -> pc.mcp.db: {
+  label: データリクエスト(SQL)
+}
+pc.mcp.db -> gcp.db: {
+  label: 読み取りOnlyでクエリ実行
+}
